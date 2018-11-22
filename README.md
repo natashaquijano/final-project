@@ -34,6 +34,8 @@ FRONT END
 // npm install -g sass
 // npm install react-loader-spinner
 // npm install react-redux
+// npm install bootstrap --save
+// npm install --save reactstrap react react-dom
 
 RUN FRONT END
 // npm start
