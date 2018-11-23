@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const users = require('./routes/api/users');
+const mongoose = require('mongoose');
 
-// Express
+// Init Express App
 const app = express();
 
 // Express CORS Middleware
@@ -12,16 +14,31 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// DB Config
+const db = require('./config/key').mongoURI;
 
-// Set Static File
+// Connect To MongoDB Using Mlab
+mongoose.connect(db, { useNewUrlParser: true })
+    .then(() => console.log(`MongoDB connected`))
+    .catch(err => console.log(err));
+
+// Set Static File or Test Route . Welcome Route for the Index
 app.get('/', (req, res) => {
     res.send('Hello Back-End World!');
 });
 
+// Defining Passport
+const passport = require('passport');
 
-// API Endpoints
+// Passport Middleware
+app.use(passport.initialize());
+// Passport JWT Config
+require('./config/passport')(passport);
 
 
-// Running Sercer
+// Use Routes
+app.use('/api/users', users);
+
+// Running Server
 const port = process.env.PORT || 4000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
