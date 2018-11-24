@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Slideshow.scss';
 
-import Slide1 from '../../images/yoga.jpg';
-import Slide2 from '../../images/monolink.jpg';
-import Slide3 from '../../images/food.jpg';
+import Slide1 from '../../images/yoga.png';
+import Slide2 from '../../images/music.png';
+import Slide3 from '../../images/museum.png';
 
 class Slideshow extends Component {
     render() {
@@ -11,7 +11,7 @@ class Slideshow extends Component {
             <div className="slideshow">
                 <img className="yoga" src={Slide1} alt="yoga" />
                 <img className="music" src={Slide2} alt="music" />
-                <img className="food" src={Slide3} alt="food" />
+                <img className="museum" src={Slide3} alt="museum" />
 
             </div >
         );
