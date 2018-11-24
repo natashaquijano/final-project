@@ -1,0 +1,120 @@
+.navBar {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input[type=text] {
+    padding: 8px;
+    background-image: url("../../images/search-icon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    padding-left: 40px;
+    margin: 1em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #EFEFEF;
+    font-size: 16px;
+    font-weight: 800;
+    width: 700px;
+    letter-spacing: 1px;
+}
+
+input[type=submit] {
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EFEFEF;
+    color: #767676;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+li {
+      list-style-type: none; 
+      font-weight: 700;
+}
+
+// /* Media Queries */
+
+// @media only screen and (max-width: 1470px) {
+//     input[type=text] {
+//         width: 500px;
+//     }
+// }
+
+// @media only screen and (max-width: 1220px) {
+//     input[type=text] {
+//         width: 400px;
+//     }
+
+//     .nav-links {
+//         padding-right: 10px;
+//     }
+// }
+
+// @media only screen and (max-width: 1024px) {
+
+//     /* Nav Bar */
+
+//     input[type=text] {
+//         width: 300px;
+//     }
+
+//     .nav-links {
+//         padding-right: 5px;
+//     }
+// }
+
+// @media only screen and (max-width: 924px) {
+
+//     /* Nav Bar */
+
+//     input[type=text] {
+//         width: 200px;
+//         margin-left: 0px;
+//     }
+
+//     .nav-links {
+//         padding-right: 0px;
+//         margin-left: 0px;
+//         margin-right: 0px;
+//     }
+// }
+// }
+
+// @media only screen and (max-width: 786px) {
+//     .nav-links {
+//         padding-right: 0px;
+//         margin-left: 0px;
+//         margin-right: 0px;
+//     }
+// }
+
+// @media only screen and (max-width: 775px) {
+
+//     /* Nav Bar */
+
+//     .nav-bar {
+//         justify-content: space-between;
+//     }
+
+//     .hamburger {
+//         display: block;
+//     }
+
+    form {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }

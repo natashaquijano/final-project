@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const users = require('./routes/api/users');
 const mongoose = require('mongoose');
+const users = require('./routes/api/users');
 
 // Init Express App
 const app = express();
@@ -18,7 +18,8 @@ app.use(bodyParser.json());
 const db = require('./config/key').mongoURI;
 
 // Connect To MongoDB Using Mlab
-mongoose.connect(db, { useNewUrlParser: true })
+mongoose
+    .connect(db, { useNewUrlParser: true })
     .then(() => console.log(`MongoDB connected`))
     .catch(err => console.log(err));
 
@@ -34,7 +35,6 @@ const passport = require('passport');
 app.use(passport.initialize());
 // Passport JWT Config
 require('./config/passport')(passport);
-
 
 // Use Routes
 app.use('/api/users', users);
