@@ -6,8 +6,6 @@
     flex-direction: row;
     position: fixed;
     width: 100%;
-    margin-top: -8px;
-    
      
      @media only screen and (max-width: 786px) {
          flex-direction: column;
@@ -19,7 +17,6 @@
 
 .nav-logo {
     display: inline-block;
-    // margin-right: 10px;
     margin-top: 2px;
 };
 
@@ -71,17 +68,15 @@ padding-top: 7px;
 // Nav Links
 
 .nav-links  {
-     float: right;
+    float: right;
     margin: 0px;
     padding-top: 10px;
     padding-left: 0px;
-    // padding-top: 20px;
 };
 
 li {
     display: inline-block;
-    font-weight: 620;
-    font-size: 16px;
+    font-weight: 600;
     list-style-type: none; 
     padding-right: 25px;
 };

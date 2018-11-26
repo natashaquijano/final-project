@@ -7,9 +7,7 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <video className="mainv" src={Video} type="video/mp4" alt="video" />
-
-
+                <video className="mainvideo" autoplay="" src={Video} alt="video" />
             </div >
 
         );
