@@ -6,6 +6,9 @@ import Trending from '../components/Trending/Trending';
 import TrendingEvents from '../components/TrendingEvents/TrendingEvents';
 import TrendingArticles from '../components/TrendingArticles/TrendingArticles';
 import TrendingCreatives from '../components/TrendingCreatives/TrendingCreatives';
+import Following from '../components/Following/Following';
+import Follow from '../components/Follow/Follow';
+import Wishlist from '../components/Wishlist/Wishlist';
 
 class Home extends Component {
     render() {
@@ -13,6 +16,9 @@ class Home extends Component {
             <div className="Home">
                 <NavBar />
                 <Header />
+                <Following />
+                <Follow />
+                <Wishlist />
                 <Trending />
                 <TrendingEvents />
                 <TrendingArticles />
