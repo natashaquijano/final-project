@@ -1,0 +1,73 @@
+// Global Var
+
+.Footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+};
+
+// Logo & Title
+
+.logoWhite {
+    width: .5in;
+    margin: 20px;
+};
+
+.rouse-footer-title {
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+// Newsletter
+
+input[type=newsletter] {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-weight: 550;
+    height: 30px;
+    width: 300px;
+};
+
+input[type=submit] {
+    background-color: #8AA874;
+    border-style: none;
+    color: #FFFFFF;
+    margin-left: 5px;
+    font-weight: 550;
+    border-radius: 2px;
+    height: 30px;
+    width: 75px;
+};
+
+input[type=submit]:hover {
+    font-weight: 650;
+};
+
+// Social Media
+
+// Contact
+
+.contact-title {
+    font-weight: 650px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    list-style-type: none; 
+    padding-top: 0px;
+}

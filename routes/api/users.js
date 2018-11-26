@@ -12,6 +12,8 @@ const User = require('../../models/User');
 // GET api/users/test (Public)
 router.get('/test', (req, res) => res.json({ msg: 'Users Endpoint Ok' }));
 
+// SIGNUP
+
 // GET api/users/register (Public)
 router.post('/register', (req, res) => {
     // Find User By username
@@ -53,6 +55,8 @@ router.post('/register', (req, res) => {
             }
         })
 });
+
+// LOGIN
 
 // GET api/users/login (Public)
 

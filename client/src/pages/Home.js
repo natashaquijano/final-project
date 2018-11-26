@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Slideshow from '../components/slideshow/Slideshow';
+import Header from '../components/Header/Header';
 import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/Footer/Footer';
 
 class Home extends Component {
     render() {
         return (
             <div>
                 <NavBar />
-                <Slideshow />
+                <Header />
+                <Footer />
             </div>
         );
     }
