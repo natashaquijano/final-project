@@ -5,24 +5,10 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    // position: absolute;
     width: 100%;
-  
+    padding-left: 10px;
 };
-
-
-// Logo & Title
-
-// .logoWhite {
-//     width: .5in;
-//     margin: 20px;
-// };
-
-// .rouse-footer-title {
-//     margin: 0px;
-//     margin-left: 20px;
-//     margin-bottom: 20px;
-// }
 
 
 // Newsletter
@@ -37,6 +23,7 @@ input[type=newsletter] {
     font-weight: 550;
     height: 30px;
     width: 300px;
+    padding-left: 10px;
 };
 
 input[type=submit] {
