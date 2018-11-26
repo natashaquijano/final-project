@@ -16,7 +16,6 @@ class NavBar extends Component {
 
                 <div className="nav-search">
                     <input type="text" placeholder="Search" name="search-name" id="search-bar" />
-                    {/* <input type="submit" placeholder="Submit" name="button-name" className="button" /> */}
                 </div>
                 <div>
                     <ul className="nav-links">

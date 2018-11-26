@@ -26,24 +26,29 @@ input[type=newsletter] {
     padding-left: 10px;
 };
 
-input[type=submit] {
+.button-footer {
     background-color: #8AA874;
     border-style: none;
     color: #FFFFFF;
     margin-left: 5px;
+    margin-right: 20px;
     font-weight: 550;
     border-radius: 2px;
     height: 30px;
     width: 75px;
 };
 
+.footer-newsletter {
+    text-align: center;
+}
+
 .newsletter-title {
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .newsletter-form {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 input[type=submit]:hover {
@@ -53,27 +58,30 @@ input[type=submit]:hover {
 // Social Media
 .social-title {
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .social-li {
     padding: 0px;
 }
 
 .social-icons {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+}
+
+.footer-social {
+    text-align: center;
 }
 
 // Contact
 
 .contact-li {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 
 .contact-title {
-    font-weight: 650px;
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .contact-info {
@@ -82,4 +90,9 @@ input[type=submit]:hover {
     font-size: 16px;
     list-style-type: none; 
     padding-top: 0px;
+    padding-right: 0px;
+}
+
+.footer-contact {
+    text-align: center;
 }

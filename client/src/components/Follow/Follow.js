@@ -7,6 +7,7 @@ class Follow extends Component {
         return (
             <div className="Follow">
                 <h1>Who To Follow</h1>
+                <h2>View All</h2>
                 <h1>Joe</h1>
                 <input type="submit" placeholder="Follow" name="button-name" className="button-follow" />
                 <h1>Alex</h1>
