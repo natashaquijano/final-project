@@ -28,7 +28,7 @@ class Footer extends Component {
                         <h1>Social</h1>
                     </div>
                     <div className="social-icons">
-                        <ul>
+                        <ul className="social-li">
                             <li>Instagram</li>
                             <li>Facebook</li>
                             <li>Twitter</li>
@@ -40,7 +40,7 @@ class Footer extends Component {
                         <h1>Contact</h1>
                     </div>
                     <div>
-                        <ul>
+                        <ul className="contact-li">
                             <li className="contact-info">help@rouse.com</li>
                             <li className="contact-info">San Francisco, CA</li>
                         </ul>

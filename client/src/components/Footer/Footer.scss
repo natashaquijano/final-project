@@ -50,18 +50,43 @@ input[type=submit] {
     width: 75px;
 };
 
+.newsletter-title {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.newsletter-form {
+    margin-bottom: 40px;
+}
+
 input[type=submit]:hover {
     font-weight: 650;
 };
 
 // Social Media
+.social-title {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.social-li {
+    padding: 0px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
 
 // Contact
+
+.contact-li {
+    margin-bottom: 40px;
+    padding: 0px;
+}
 
 .contact-title {
     font-weight: 650px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .contact-info {
