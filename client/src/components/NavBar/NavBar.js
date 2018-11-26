@@ -13,6 +13,7 @@ class NavBar extends Component {
                 <div className="nav-title">
                     <h1 className="title">Rouse</h1>
                 </div>
+
                 <div className="nav-search">
                     <input type="text" placeholder="Search" name="search-name" id="search-bar" />
                     {/* <input type="submit" placeholder="Submit" name="button-name" className="button" /> */}

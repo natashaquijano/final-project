@@ -3,26 +3,26 @@
 .Footer {
     background-color: #000000;
     color: #FFFFFF;
-    margin: 0;
-    display: flex;
+    // display: flex;
     flex-direction: row;
-    justify-content: space-between;
     position: absolute;
     width: 100%;
+  
 };
+
 
 // Logo & Title
 
-.logoWhite {
-    width: .5in;
-    margin: 20px;
-};
+// .logoWhite {
+//     width: .5in;
+//     margin: 20px;
+// };
 
-.rouse-footer-title {
-    margin: 0px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
+// .rouse-footer-title {
+//     margin: 0px;
+//     margin-left: 20px;
+//     margin-bottom: 20px;
+// }
 
 
 // Newsletter

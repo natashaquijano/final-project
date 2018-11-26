@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import './Footer.scss';
-import LogoWhite from '../../images/logo-white.png';
 
 
 class Footer extends Component {
     render() {
         return (
             <div className="Footer">
-                <div className="footer-logo-title">
+                {/* <div className="footer-logo-title">
                     <div className="footer-logo">
                         <img className="logoWhite" src={LogoWhite} alt="logo" />
                     </div>
                     <div className="footer-title">
                         <h1 className="rouse-footer-title">Rouse</h1>
                     </div>
-                </div>
+                </div> */}
                 <div className="footer-newsletter">
                     <div className="newsletter-title">
                         <h1>Sign Up To Our Newsletter</h1>

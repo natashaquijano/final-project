@@ -2,12 +2,23 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
+    // width: 1180px;
+    margin: 0 auto;
 }
 
 html {
     height: 100%;
 }
 
-body {
-    margin: 0;
+body{
+    -webkit-transform: scale(0.67);
+       -moz-transform: scale(0.67);
+            transform: scale(0.67);
 }
+
+
+// .main-container {
+//     width: 1180px;
+//     margin: 0 auto;
+//     padding: 0 30px;
+// }

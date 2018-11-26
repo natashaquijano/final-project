@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Header.scss';
+import './Follow.scss';
 
 
-class Header extends Component {
+class Follow extends Component {
     render() {
         return (
-            <div className="Header">
+            <div className="Follow">
 
 
             </div >
@@ -14,4 +14,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Follow;
