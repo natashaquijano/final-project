@@ -4,7 +4,7 @@ class TrendingArticles extends Component {
     render() {
         return (
             <div className="trendingArticles">
-
+                <h1>Articles</h1>
             </div>
         );
     }

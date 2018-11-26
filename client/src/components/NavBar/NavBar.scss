@@ -2,10 +2,11 @@
 .navBar {
     border-bottom: 1px solid #EFEFEF;
     background-color: #FFFFFF;
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     position: fixed;
+    margin-top: 0px;
     width: 100%;
      
      @media only screen and (max-width: 786px) {
@@ -37,7 +38,7 @@
     margin: 10px;
     font-size: 32px;
     margin-left: 0px;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 };
 
