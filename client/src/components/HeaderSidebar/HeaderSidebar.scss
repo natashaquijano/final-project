@@ -1,0 +1,14 @@
+ .wrapper{
+      display:grid;
+      grid-template-columns: 75% 25%;
+    };
+    
+    .header-sidebar {
+      // width: 100%;
+      margin: 0px;
+      padding: 0px;
+      margin-top: 47px;
+      background-color: #ffffff;
+       position: absolute;
+       z-index: 0;
+    };
