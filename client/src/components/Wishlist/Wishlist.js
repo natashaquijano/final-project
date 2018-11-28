@@ -13,7 +13,7 @@ class Wishlist extends Component {
             <div className="Wishlist">
                 <div className="title-follow-view">
                     <div className="title-follow">
-                        <p>Whislist</p>
+                        <p className="title-follow">Whislist</p>
                     </div>
                     <div className="title-view title-view-2">
                         <p>View All</p>
@@ -33,7 +33,7 @@ class Wishlist extends Component {
 
                     <div className="name-button">
                         <div className="follow-name2">
-                            <p className="two">Yivamukti & Sound Meditation</p>
+                            <p className="two">Yivamukti Yoga</p>
                             <img className="second" src={Yoga} alt="bradley" />
 
                             <div className="button-follow2">

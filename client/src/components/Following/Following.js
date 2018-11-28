@@ -14,10 +14,10 @@ class Following extends Component {
             <div className="Following">
                 <div className="title-follow-view">
                     <div className="title-follow">
-                        <p>Following</p>
+                        <p className="title-follow">Following</p>
                     </div>
                     <div className="title-view">
-                        <p>View All</p>
+                        <p className="title-follow">View All</p>
                     </div>
                 </div>
                 <div className="follow-list">
