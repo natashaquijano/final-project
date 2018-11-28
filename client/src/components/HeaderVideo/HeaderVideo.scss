@@ -10,7 +10,7 @@ video{
 }
 
 #location-bar {
-    width: 300px;
+    width: 400px;
     margin-right: 10px;
     height: 40px;
     border: none;
@@ -28,3 +28,9 @@ video{
     background-color: #333333;
     color: #FFFFFF;
 };
+
+#location-bar, .save-button {
+    position: relative;
+    top: -680px;
+    right: -50px;
+}
