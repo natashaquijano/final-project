@@ -25,7 +25,6 @@ class Following extends Component {
                         <div className="follow-name">
                             <p className="one">Natalie Fisher</p>
                             <img className="first" src={Natalie} alt="natalie" />
-
                             <div className="button-follow1">
                                 <img className="followers" src={Followers} alt="followers" /><p className="followers">8649</p>
                                 <img className="followings" src={Followings} alt="followings" /><p className="followings">321</p>
