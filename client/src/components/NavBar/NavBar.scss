@@ -8,7 +8,7 @@
     position: fixed;
     z-index: 10;
     width: 100%;
-    margin-top: -8px;
+    margin-top: 0px;
      
      @media only screen and (max-width: 786px) {
          flex-direction: column;
@@ -24,9 +24,10 @@
 };
 
 .logo {
-    width: .35in;
+    width: .3in;
     margin-left: 15px;
     margin-top: 5px;
+    margin-right: 75px;
 };
 
 .nav-title {
@@ -82,11 +83,13 @@ li {
     display: inline-block;
     font-weight: 600;
     list-style-type: none; 
-    padding-right: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
 };
 
 .nav-image {
     margin-right: 10px;
+    margin-left: 50px;
     width: .2in;
 };
 

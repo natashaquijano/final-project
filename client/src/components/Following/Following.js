@@ -26,8 +26,8 @@ class Following extends Component {
                             <p className="one">Natalie Fisher</p>
                             <img className="first" src={Natalie} alt="natalie" />
                             <div className="button-follow1">
-                                <img className="followers" src={Followers} alt="followers" /><p className="followers">8649</p>
-                                <img className="followings" src={Followings} alt="followings" /><p className="followings">321</p>
+                                <img className="followers followers-i" src={Followers} alt="followers" /><p className="followers followers-p">8649</p>
+                                <img className="followings followings-i" src={Followings} alt="followings" /><p className="followings followings-p">321</p>
                             </div>
                         </div>
                     </div>
@@ -37,8 +37,8 @@ class Following extends Component {
                             <p className="two">Bradley Thomas</p>
                             <img className="second" src={Bradley} alt="bradley" />
                             <div className="button-follow2">
-                                <img className="followers" src={Followers} alt="followers" /><p className="followers">56k</p>
-                                <img className="followings" src={Followings} alt="followings" /><p className="followings">973</p>
+                                <img className="followers followers-i" src={Followers} alt="followers" /><p className="followers followers-p">56k</p>
+                                <img className="followings followings-i" src={Followings} alt="followings" /><p className="followings followings-p">973</p>
                             </div>
                         </div>
                     </div>
@@ -48,8 +48,8 @@ class Following extends Component {
                             <p className="three">Andrea George</p>
                             <img className="third" src={Andrea} alt="andrea" />
                             <div className="button-follow3">
-                                <img className="followers" src={Followers} alt="followers" /><p className="followers">3419</p>
-                                <img className="followings" src={Followings} alt="followings" /><p className="followings">159</p>
+                                <img className="followers followers-i" src={Followers} alt="followers" /><p className="followers followers-p">3419</p>
+                                <img className="followings followings-i" src={Followings} alt="followings" /><p className="followings followings-p">159</p>
                             </div>
                         </div>
                     </div>

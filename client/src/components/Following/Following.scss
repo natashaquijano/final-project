@@ -1,3 +1,8 @@
+.Following {
+    display: flex;
+    display:inline-block;
+    background-color: white;
+}
 .title-view2 {
     display: inline-block;
 }
@@ -14,7 +19,7 @@
 .title-follow {
     display: inline-block;
     padding: 10px;
-    padding-right: 165px;
+    // padding-right: 165px;
 }
 
 .title-view {
@@ -27,10 +32,10 @@
     padding: 0px;
 }
 
-.follow-name, .follow-name2, .follow-name3 {
-display: inline-block;
-padding: 2px;
-};
+// .follow-name, .follow-name2, .follow-name3 {
+// display: inline-block;
+// padding: 2px;
+// };
 
 
 .first, .second, .third {
@@ -77,4 +82,26 @@ width: .15in;
 
 .name-button {
     display: inline-block;
+}
+
+.followers-i {
+    margin-left: 75px;
+    margin-right: 5px;
+}
+
+.followings-i {
+    margin-left: 40px;
+    margin-right: 5px;
+}
+
+.followers-p {
+    margin-right: 0px;
+}
+
+.followings-p {
+    margin-right: 0px;
+}
+
+.followers-p, .followings-p {
+    font-size: 14px;
 }

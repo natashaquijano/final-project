@@ -1,6 +1,8 @@
 video{
     object-fit: fill;
     height: 100%;
+    display: flex;
+    display:inline-block;
 }
 
 .vid{
@@ -14,7 +16,6 @@ video{
     border: none;
     border-radius: 2px;
     background-color: #333333;
-    border: 1px solid black;
     color: #FFFFFF;
     padding-left: 10px;
 };
