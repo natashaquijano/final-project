@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 class Event extends Component {
     render() {
         return (
-            <div>
-                <h1>Hello Event Page!</h1>
+
+            <div className="all-container">
+                <div className="body-container ">
+                </div>
             </div>
         );
     }
