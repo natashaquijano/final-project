@@ -25,7 +25,6 @@ const AuthenticatedRoute = ({ component: Component, ...rest }) => (
   />
 );
 
-
 const App = () => (
   <div>
     <NavBar />

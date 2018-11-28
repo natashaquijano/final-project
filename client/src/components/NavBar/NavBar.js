@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './NavBar.scss';
-import Logo from '../../images/logo.png';
-import Defi from '../../images/default-image.png';
+import Logo from '../../images/icons/logo.png';
+import Defi from '../../images/icons/default-image.png';
 
 class NavBar extends Component {
     render() {
@@ -11,7 +11,7 @@ class NavBar extends Component {
                     <img className="logo" src={Logo} alt="logo" />
                 </div>
                 <div className="nav-title">
-                    <h1 className="title">Rouse</h1>
+                    {/* <h1 className="title">Rouse</h1> */}
                 </div>
 
                 <div className="nav-search">
@@ -19,7 +19,6 @@ class NavBar extends Component {
                 </div>
                 <div>
                     <ul className="nav-links">
-                        <li>About</li>
                         <img className="nav-image" src={Defi} alt="defi" />
                         <li className="nav-profile">Profile</li>
                         <li>Shopping Cart</li>

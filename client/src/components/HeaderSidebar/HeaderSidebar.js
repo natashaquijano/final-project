@@ -10,7 +10,6 @@ class HeaderSidebar extends Component {
         return (
             <div className="header-sidebar">
                 <Following />
-
                 <Wishlist />
             </div>
         );

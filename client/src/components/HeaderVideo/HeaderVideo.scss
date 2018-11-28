@@ -1,0 +1,29 @@
+video{
+    object-fit: fill;
+    height: 100%;
+}
+
+.vid{
+    height:100%;
+}
+
+#location-bar {
+    width: 300px;
+    margin-right: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    background-color: #333333;
+    border: 1px solid black;
+    color: #FFFFFF;
+    padding-left: 10px;
+};
+
+.save-button {
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #FFFFFF;
+};

@@ -1,11 +1,3 @@
-.Following {
-    // background-color: green;
-}
-
-// .title-following {
-//     display: inline-block;
-// }
-
 .title-view2 {
     display: inline-block;
 }
@@ -18,13 +10,6 @@
 .follow-list {
     padding: 10px;
       border-left: 1px solid #EFEFEF;
-}
-
-.button-follow {
-    border-radius: 2px;
-    border: none;
-    background-color: #8AA874;
-    color: #FFFFFF;
 }
 .title-follow {
     display: inline-block;
@@ -47,22 +32,6 @@ display: inline-block;
 padding: 2px;
 };
 
-.button-follow1, .button-follow2, .button-follow3 {
-    display: inline-block;
-     position: absolute;
-     left: 120px;
-};
-.button-follow1 {
-    bottom: 303px;
-}
-
-.button-follow2 {
-    bottom: 193px;
-}
-
-.button-follow3 {
-bottom: 83px;
-}
 
 .first, .second, .third {
     width: 20%;
@@ -81,6 +50,31 @@ bottom: 83px;
     padding-bottom: 0px;
 }
 
-.follow-list {
-    border-bottom: 1px solid #EFEFEF;
+.followers, .followings {
+    display: inline-block;
+
+}
+
+.button-follow1 {
+    display: inline-block;
+}
+
+.button-follow2 {
+    display: inline-block;
+}
+
+.button-follow3 {
+    display: inline-block;
+}
+
+.followings {
+width: .15in;
+}
+
+.followers {
+    width: .22in;
+}
+
+.name-button {
+    display: inline-block;
 }

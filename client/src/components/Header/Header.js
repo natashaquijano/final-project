@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './Header.scss';
 
-import MainVideo from '../MainVideo/MainVideo';
+import HeaderVideo from '../../components/HeaderVideo/HeaderVideo';
 import HeaderSidebar from '../../components/HeaderSidebar/HeaderSidebar';
 
 class Header extends Component {
     render() {
         return (
             <div className="wrapper">
-                <MainVideo />
+                <div>
+                    <HeaderVideo />
+                </div>
                 <div>
                     <HeaderSidebar />
                 </div>
