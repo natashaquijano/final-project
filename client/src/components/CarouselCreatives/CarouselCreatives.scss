@@ -1,0 +1,7 @@
+ul li button {
+  display: none !important;
+}
+
+button[aria-label="NEXT"]:after{
+  content: "UP" !important
+}

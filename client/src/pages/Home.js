@@ -5,6 +5,7 @@ import Trending from '../components/Trending/Trending';
 import TrendingEvents from '../components/TrendingEvents/TrendingEvents';
 import TrendingArticles from '../components/TrendingArticles/TrendingArticles';
 import TrendingCreatives from '../components/TrendingCreatives/TrendingCreatives';
+import CarouselCreatives from '../components/CarouselCreatives/CarouselCreatives';
 
 class Home extends Component {
     render() {
@@ -13,6 +14,7 @@ class Home extends Component {
                 <div className="body-container">
                     <Header />
                     <Trending />
+                    <CarouselCreatives />
                     <TrendingEvents />
                     <TrendingArticles />
                     <TrendingCreatives />

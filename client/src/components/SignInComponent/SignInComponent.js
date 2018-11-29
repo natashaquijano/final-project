@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../SignUpComponent/SignUpComponent';
+
 class SignInComponent extends Component {
     render() {
         return (
