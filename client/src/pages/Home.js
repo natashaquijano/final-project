@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header/Header';
+import Carousel from '../components/Carousel/Carousel';
 import Trending from '../components/Trending/Trending';
 import TrendingEvents from '../components/TrendingEvents/TrendingEvents';
 import TrendingArticles from '../components/TrendingArticles/TrendingArticles';
@@ -10,8 +11,9 @@ class Home extends Component {
     render() {
         return (
             <div className="all-container">
-                <div className="body-container ">
+                <div className="body-container">
                     <Header />
+                    <Carousel />
                     <Trending />
                     <TrendingEvents />
                     <TrendingArticles />
