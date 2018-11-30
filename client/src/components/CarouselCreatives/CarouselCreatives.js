@@ -3,7 +3,7 @@
 import React from 'react';
 import CarouselSlider from 'react-carousel-slider';
 
-import Ashley from '../../images/Creatives/ashley-longshore.png';
+// import Ashley from '../../images/Creatives/ashley-longshore.png';
 // import Bedouin from '../../images/Creatives/bedouin.png';
 // import BuddhistChef from '../../images/Creatives/buddhist-chef.png';
 // import DavidBellemere from '../../images/Creatives/david-bellemere.png';
@@ -15,18 +15,6 @@ import Ashley from '../../images/Creatives/ashley-longshore.png';
 // import Satori from '../../images/Creatives/satori.png';
 
 export default class extends React.Component {
-    // render() {
-    //     return (
-    //         <Carousel slidesToShow={4} CenterControls={false}>
-    //             <img src="https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60" />
-    //             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />
-    //             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3" />
-    //             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4" />
-    //             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" />
-    //             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
-    //         </Carousel>
-    //     );
-    // }
     render() {
 
         let itemsStyle = {
@@ -34,7 +22,7 @@ export default class extends React.Component {
             background: "white",
             margin: "0 30px",
             // boxShadow: "1px 1px 1px 1px #9E9E9E",
-            borderRadius: "4px"
+            borderRadius: "5px"
         };
 
         let imgStyle = {
@@ -47,44 +35,61 @@ export default class extends React.Component {
             top: "290px",
             color: "black",
             background: "transparent",
-            // fontSize: "14px",
-            // fontFamily: "Times New Roman"
+            fontSize: "16px",
+            fontFamily: "Open Sans"
         };
 
-        let textBoxStyle2 = {
-            width: "70%",
-            top: "330px",
-            color: "black",
-            background: "transparent",
-            fontSize: "12px",
-            // fontStyle: "italic"
-        };
 
         let items = [
             {
-                "imgSrc": "../../images/Creatives/ashley-longshore.png",
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
                 "name": "Niklas Koppernigk",
-                "des": "19 February 1473 – 24 May 1543"
+
             },
             {
-                "imgSrc": "../../images/Creatives/ashley-longshore.png",
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
                 "name": "Galileo Galilei",
-                "des": "15 February 1564 – 8 January 1642"
+
             },
             {
-                "imgSrc": "../../images/Creatives/ashley-longshore.png",
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
                 "name": "Michael Faraday",
-                "des": "22 September 1791 – 25 August 1867"
+
             },
             {
-                "imgSrc": "../../images/Creatives/ashley-longshore.png",
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
                 "name": "Marie Curie",
-                "des": "7 November 1867 – 4 July 1934"
+
             },
             {
-                "imgSrc": "../../images/Creatives/ashley-longshore.png",
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
                 "name": "Albert Einstein",
-                "des": "14 March 1879 – 18 April 1955"
+
+            },
+            {
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
+                "name": "Niklas Koppernigk",
+
+            },
+            {
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
+                "name": "Galileo Galilei",
+
+            },
+            {
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
+                "name": "Michael Faraday",
+
+            },
+            {
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
+                "name": "Marie Curie",
+
+            },
+            {
+                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
+                "name": "Albert Einstein",
+
             }
         ]
 
@@ -92,33 +97,16 @@ export default class extends React.Component {
             <div key={index} >
                 <img style={imgStyle} src={item.imgSrc} />
                 <p style={textBoxStyle} >{item.name}</p>
-                <p style={textBoxStyle2} >{item.des}</p>
+
             </div>
         );
 
-        let btnWrapperStyle = {
-            position: "relative",
-            borderRadius: "50%",
-            height: "50px",
-            width: "50px",
-            boxShadow: "1px 1px 1px 1px #9E9E9E",
-            textAlign: "center"
-        }
-
-        let btnStyle = {
-            display: "inline-block",
-            position: "relative",
-            top: "50%",
-            transform: "translateY(-50%)",
-            fontSize: "36px"
-        }
-
-        let rBtnCpnt = (<div style={btnWrapperStyle} >
-            <div style={btnStyle} className="material-icons" >next</div>
+        let rBtnCpnt = (<div>
+            <div className="material-icons" > next </div>
         </div>);
 
-        let lBtnCpnt = (<div style={btnWrapperStyle} >
-            <div style={btnStyle} className="material-icons" >prev</div>
+        let lBtnCpnt = (<div>
+            <div className="material-icons" > prev </div>
         </div>);
 
         let scientistsCard = (<CarouselSlider
@@ -131,9 +119,8 @@ export default class extends React.Component {
             lBtnCpnt={lBtnCpnt}
         />);
 
-        return (<div style={{ position: "relative", margin: "0 auto", width: "80%" }} >
+        return (<div style={{ position: "relative", margin: "0 auto", width: "100%" }} >
             {scientistsCard}
         </div>);
     }
 }
-

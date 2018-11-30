@@ -3,6 +3,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const users = require('./routes/api/users');
+const stripe = require('stripe')('sk_test_G9Y1yOVZNb5dKj5aETTcTO31');
+const exphbs = require('express-handlebars');
 
 // Init Express App
 const app = express();
@@ -27,6 +29,10 @@ mongoose
 app.get('/', (req, res) => {
     res.send('Hello Back-End World!');
 });
+
+// app.get('/', (req, res) => {
+//     res.render('index');
+// });
 
 // Defining Passport
 const passport = require('passport');

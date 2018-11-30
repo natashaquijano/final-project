@@ -16,6 +16,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer';
+import Landing from './pages/Landing';
 
 
 
@@ -31,6 +32,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       {/* <Route exact path="/" component={Landing} /> */}
+      <Route path="/landing" component={Landing} />
       <Route path="/signin" component={SignIn} />
       <Route path="/event" component={Event} />
       <Route path="/friendprofile" component={FriendProfile} />
