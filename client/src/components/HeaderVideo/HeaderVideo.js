@@ -6,7 +6,7 @@ class HeaderVideo extends Component {
     render() {
         return (
             <div className="vid">
-                <video className="mainvideo" autoPlay="main-video" src={Video} alt="video" />
+                <video className="mainvideo" loop autoPlay="main-video" src={Video} alt="video" />
                 <input type="text" placeholder="Your Location" name="search-location" id="location-bar" />
                 <button className="save-button">Save</button>
             </div>
