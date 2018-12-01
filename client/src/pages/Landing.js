@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import LandingHeader from '../components/LandingHeader/LandingHeader';
-// import Carousel from '../components/Carousel/Carousel';
 import Trending from '../components/Trending/Trending';
 import TrendingEvents from '../components/TrendingEvents/TrendingEvents';
 import TrendingArticles from '../components/TrendingArticles/TrendingArticles';
