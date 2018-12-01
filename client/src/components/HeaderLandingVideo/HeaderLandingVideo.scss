@@ -1,14 +1,3 @@
-// video{
-//     object-fit: fill;
-//     height: 100%;
-//     display: flex;
-//     display:inline-block;
-// }
-
-.vid2{
-    height:120%;
-}
-
 #location-bar2 {
     width: 400px;
     margin-right: 10px;
@@ -29,13 +18,17 @@
     color: #FFFFFF;
 };
 
-#location-bar2, .save-button2 {
-    position: relative;
-    top: -680px;
-    right: -50px;
-}
-
 .mainvideo2 {
     width: 100%;
     height:100%;
+    display: block;
 };
+
+.button-save {
+      position: absolute;
+      top: 80px;
+      left: 250px;
+}
+
+
+
