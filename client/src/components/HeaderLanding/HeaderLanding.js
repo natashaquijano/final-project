@@ -6,7 +6,7 @@ import HeaderLandingVideo from '../../components/HeaderLandingVideo/HeaderLandin
 class HeaderLanding extends Component {
     render() {
         return (
-            <div className="wrapper">
+            <div className="wrapper2">
                 <div>
                     <HeaderLandingVideo />
                 </div>
