@@ -47,7 +47,15 @@ router.post('/register', (req, res) => {
                         if (err) throw err;
                         newUser.password = hash;
                         newUser.save()
-                            .then(user => res.json(user))
+                            .then(user => {
+
+                                const payload = { id: user.id, username: user.username, avatar: user.avatar }
+
+                                // Sign In token
+                                jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
+                                    res.json({ success: true, token: 'Bearer ' + token })
+                                });
+                            })
                             .catch(err => console.log(err));
                     })
                 })
@@ -79,7 +87,7 @@ router.post('/login', (req, res) => {
                         // User matched, send JSON Web Token
 
                         // Create token payload (you can include anything you want)
-                        const payload = { id: user.id, name: user.name, avatar: user.avatar }
+                        const payload = { id: user.id, username: user.username, avatar: user.avatar }
 
                         // Sign In token
                         jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {

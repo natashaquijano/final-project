@@ -1,21 +1,45 @@
 import React, { Component } from 'react';
 import '../SignUpComponent/SignUpComponent';
 
+import axios from '../../helper/APIConfig';
+
 class SignInComponent extends Component {
+    state = {}
+    handleInputChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post("/users/login", this.state)
+            .then((res) => {
+                window.localStorage.setItem('token', res.data.token)
+                this.props.history.push("/")
+            })
+            .catch((e) => {
+                console.log(e.message)
+            })
+
+    }
+
     render() {
+        const { username, password } = this.state;
         return (
             <div className="signupform">
 
                 <form className="signup">
-                    <h1 className="upexplore">Sign Up & Explore</h1>
+                    <h1 className="upexplore">Sign In & Explore</h1>
                     <p className="fillin">Please fill in this form to create an account</p>
 
-                    <input type="text" placeholder="Username" name="username" className="fillinf" />
+                    <input type="text" value={username || ""} onChange={this.handleInputChange} placeholder="Username" name="username" className="fillinf" />
 
-                    <input type="password" placeholder="Enter Password" name="psw" className="fillinf" />
+                    <input type="password" value={password || ""} onChange={this.handleInputChange} placeholder="Enter Password" name="password" className="fillinf" />
 
                     <div className="upbtn">
-                        <button type="submit" className="signupbtn">Sign Up</button>
+                        <button disabled={!(username && password)} onClick={this.handleSubmit} className="signupbtn">Sign In</button>
 
                     </div>
 

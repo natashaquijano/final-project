@@ -9,6 +9,7 @@ import { isAuthenticated } from '../src/helper/Index';
 import Event from './pages/Event';
 import FriendProfile from './pages/FriendProfile';
 import Home from './pages/Home';
+// import Landing from './pages/Landing';
 import Profile from './pages/Profile';
 import ShoppingCart from './pages/ShoppingCart';
 import SignIn from './pages/SignIn';
@@ -22,26 +23,28 @@ import Success from './pages/Success'
 
 const AuthenticatedRoute = ({ component: Component, ...rest }) => (
   <Route
-    {...rest} render={(props) => (isAuthenticated() ? <Component {...props} /> : <Redirect to="/" />)}
+    {...rest} render={(props) => (isAuthenticated() ? <Component {...props} /> : <Redirect to="/landing" />)}
   />
 );
 
 const App = () => (
   <div>
-    <NavBar />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      {/* <Route exact path="/" component={Landing} /> */}
-      <Route path="/landing" component={Landing} />
-      <Route path="/signin" component={SignIn} />
-      <Route path="/event" component={Event} />
-      <Route path="/friendprofile" component={FriendProfile} />
-      <Route path="/signup" component={SignUp} />
-      <Route path="/about" component={ShoppingCart} />
-      <Route path="/success" component={Success} />
-      {/* <AuthenticatedRoute path="/profile/:userId" component={Profile} /> */}
-      <Route path='/profile' component={Profile} />
-    </Switch>
+
+    <Router>
+      <Switch>
+        <AuthenticatedRoute exact path="/" component={Home} />
+        {/* <Route exact path="/" component={Landing} /> */}
+        <Route path="/landing" component={Landing} />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/event" component={Event} />
+        <Route path="/friendprofile" component={FriendProfile} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/shoppingcart" component={ShoppingCart} />
+        <Route path="/success" component={Success} />
+        <AuthenticatedRoute path="/profile/:userId" component={Profile} />
+        <Route path='/profile' component={Profile} />
+      </Switch>
+    </Router>
     <Footer />
   </div>
 );
