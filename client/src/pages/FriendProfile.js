@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import FriendProfileInfo from '../components/FriendProfileInfo/FriendProfileInfo';
+import HeaderProfile from '../components/HeaderProfile/HeaderProfile';
 
 class FriendProfile extends Component {
     render() {
@@ -6,6 +8,8 @@ class FriendProfile extends Component {
 
             <div className="all-container">
                 <div className="body-container ">
+                    <HeaderProfile />
+                    <FriendProfileInfo />
                 </div>
             </div>
 
