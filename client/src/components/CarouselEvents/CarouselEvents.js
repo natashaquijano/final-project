@@ -3,6 +3,7 @@
 import React from 'react';
 import CarouselSlider from 'react-carousel-slider';
 
+
 export default class extends React.Component {
     render() {
 
@@ -30,56 +31,17 @@ export default class extends React.Component {
 
 
         let items = [
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Niklas Koppernigk",
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
+            { imgSrc: 'http://via.placeholder.com/200', title: 'Ashley LongShore', subTitle: 'sub title' },
 
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Galileo Galilei",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Michael Faraday",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Marie Curie",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Albert Einstein",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Niklas Koppernigk",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Galileo Galilei",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Michael Faraday",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Marie Curie",
-
-            },
-            {
-                "imgSrc": "https://images.unsplash.com/photo-1494049694820-92a3163b10ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c65a3c5ece6aa00868a811993ac7ef5&auto=format&fit=crop&w=500&q=60",
-                "name": "Albert Einstein",
-
-            }
         ]
 
         let scientists = items.map((item, index) =>
@@ -91,11 +53,11 @@ export default class extends React.Component {
         );
 
         let rBtnCpnt = (<div>
-            <div className="material-icons" > next </div>
+            <div className="material-icons" > &gt; </div>
         </div>);
 
         let lBtnCpnt = (<div>
-            <div className="material-icons" > prev </div>
+            <div className="material-icons" > &lt; </div>
         </div>);
 
         let scientistsCard = (<CarouselSlider

@@ -38,7 +38,8 @@ const App = () => (
       <Route path="/friendprofile" component={FriendProfile} />
       <Route path="/signup" component={SignUp} />
       <Route path="/about" component={ShoppingCart} />
-      <AuthenticatedRoute path="/profile/:userId" component={Profile} />
+      {/* <AuthenticatedRoute path="/profile/:userId" component={Profile} /> */}
+      <Route path='/profile' component={Profile} />
     </Switch>
     <Footer />
   </div>
