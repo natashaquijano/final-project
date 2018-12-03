@@ -1,0 +1,24 @@
+
+.slider {
+    border: 1px solid;
+}
+
+#Events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+#Creatives {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+#Articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+div.content {
+    padding: 5px;
+}

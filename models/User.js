@@ -27,6 +27,8 @@ const UserSchema = new Schema({
     avatar: {
         type: String,
     },
+    followers: [{ type: Number, ref: 'users' }],
+    following: [{ type: Number, ref: 'users' }],
     Date: {
         type: Date,
         default: Date.now,

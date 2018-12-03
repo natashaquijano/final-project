@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const users = require('./routes/api/users');
+const products = require('./routes/api/products');
 const stripe = require('stripe')('sk_test_G9Y1yOVZNb5dKj5aETTcTO31');
 const exphbs = require('express-handlebars');
 
@@ -44,6 +45,7 @@ require('./config/passport')(passport);
 
 // Use Routes
 app.use('/api/users', users);
+app.use('/api/products', products);
 
 // Running Server
 const port = process.env.PORT || 4000;
