@@ -38,10 +38,10 @@ class Home extends Component {
                 <div className="all-container">
                     <div className="body-container">
                         <Header />
-                        <Trending />
-                        <Carousel header="Events" items={eventItems} />
-                        <Carousel header="Articles" items={articleItems} />
-                        <Carousel header="Creatives" items={creativeItems} />
+                        <Trending
+                            eventItems={eventItems}
+                            articleItems={articleItems}
+                            creativeItems={creativeItems} />
                     </div>
                 </div>
             </div>
