@@ -12,7 +12,7 @@ class HeaderProfile extends Component {
                     <HeaderProfileInfo />
                 </div>
                 <div>
-                    <Following />
+                    {/* <Following /> */}
                 </div>
             </div >
 

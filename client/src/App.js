@@ -9,15 +9,14 @@ import { isAuthenticated } from '../src/helper/Index';
 import Event from './pages/Event';
 import FriendProfile from './pages/FriendProfile';
 import Home from './pages/Home';
-// import Landing from './pages/Landing';
 import Profile from './pages/Profile';
 import ShoppingCart from './pages/ShoppingCart';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer';
 import Landing from './pages/Landing';
-import Success from './pages/Success'
+import Success from './pages/Success';
+import Suggestions from './pages/Suggestions';
 
 
 
@@ -42,6 +41,7 @@ const App = () => (
         <Route path="/shoppingcart" component={ShoppingCart} />
         <Route path="/success" component={Success} />
         <AuthenticatedRoute path="/profile/:userId" component={Profile} />
+        <AuthenticatedRoute path="/suggestions" component={Suggestions} />
         <Route path='/profile' component={Profile} />
       </Switch>
     </Router>

@@ -52,7 +52,7 @@ router.post('/register', (req, res) => {
                                 const payload = { id: user.id, username: user.username, avatar: user.avatar }
 
                                 // Sign In token
-                                jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
+                                jwt.sign(payload, keys.secretOrKey, { expiresIn: 86400 }, (err, token) => {
                                     res.json({ success: true, token: 'Bearer ' + token })
                                 });
                             })
@@ -90,8 +90,11 @@ router.post('/login', (req, res) => {
                         const payload = { id: user.id, username: user.username, avatar: user.avatar }
 
                         // Sign In token
-                        jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
-                            res.json({ success: true, token: 'Bearer ' + token })
+                        jwt.sign(payload, keys.secretOrKey, { expiresIn: 86400 }, (err, token) => {
+                            res.json({
+                                success: true, token: 'Bearer '
+                                    + token
+                            })
                         });
                     } else {
                         return res.status(400).json({ password: 'Password or username is incorrect' })
@@ -101,15 +104,42 @@ router.post('/login', (req, res) => {
 });
 
 // GET api/users/current (Private)
-router.get('current', passport.authenticate('jwt', { session: false }), (req, res) => {
-    res.json({
-        id: req.user.id,
-        username: req.body.username,
-        firstName: req.user.firstName,
-        lastName: req.user.lastName,
-        username: req.user.username,
-        avatar: req.user.avatar,
-    })
+router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
+    User.findById(req.user.id)
+        .populate('following')
+        .populate('whishlist')
+        .exec(function (err, user) {
+            if (err) return res.status(400).json({ error: err.message })
+            return res.send({
+                user
+            })
+        });
 });
+
+
+router.post('/follow/:id', passport.authenticate('jwt', { session: false }), (req, res) => {
+    followerId = req.user.id;
+    followId = req.params.id
+    User.findOneAndUpdate(
+        { _id: followId },
+        {
+            $push: { followers: followerId }
+        })
+        .then(() => {
+            User.findOneAndUpdate(
+                { _id: followerId },
+                {
+                    $push: { following: followId }
+                })
+                .then(() => {
+                    return res.json({
+                        success: true
+                    })
+                })
+        })
+        .catch((error) => {
+            return res.status(400).json({ error: error.message })
+        });
+})
 
 module.exports = router;

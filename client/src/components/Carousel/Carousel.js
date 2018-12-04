@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import './Carousel.scss'
+import './Carousel.scss';
 // import CarouselSlider from 'react-carousel-slider';
 
 
@@ -42,7 +42,7 @@ export default class extends React.Component {
 
     getNewSlide = (imgSrc, title, description) => {
         var slide = document.createElement('div');
-        slide.innerHTML = '<img src="' + imgSrc + '" width="400px" height="300px"/><div class="content"><h2>' + title + '</h2><h3>' + description + '</h3></div >';
+        slide.innerHTML = '<img src="' + imgSrc + '" width="300px" height="200px"/><div class="content"><h2>' + title + '</h2><h3>' + description + '</h3></div >';
         slide.className = 'slider';
         return slide;
     }
@@ -84,8 +84,8 @@ export default class extends React.Component {
             </div>
             <div style={{ clear: "left" }}></div>
             <div>
-                <button onClick={this.previous}>&lt;</button>
-                <button onClick={this.next}>&gt;</button>
+                <button onClick={this.previous} className="previous-button">&lt;</button>
+                <button onClick={this.next} className="next-button">&gt;</button>
             </div>
 
         </div>);

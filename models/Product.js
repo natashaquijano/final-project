@@ -15,7 +15,7 @@ const ProductSchema = new Schema({
         type: String,
         required: true,
     },
-    likes: [{ type: Number, ref: 'users' }],
+    likes: [{ type: String, ref: 'users' }],
     productType: {
         type: String,
         required: true,

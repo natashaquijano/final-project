@@ -1,6 +1,13 @@
 
 .slider {
-    border: 1px solid;
+    // border: 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+#slider-main {
+    wdith: 50%;
 }
 
 #Events {
@@ -21,4 +28,18 @@
 
 div.content {
     padding: 5px;
+}
+
+.previous-button, .next-button {
+border: none;
+background-color: transparent;
+color: #333333;
+font-weight: 200px;
+font-family: 'Open Sans';
+padding: 1px;
+
+}
+
+.next-button {
+    float: right;
 }
