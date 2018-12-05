@@ -1,6 +1,6 @@
 /* main div */
 .suggestedEventMain {
-
+min-height: 885px;
 }
 
 .wrap-around {
@@ -16,7 +16,7 @@
 
 /* h1 div */
 .suggestedEventMainh1 {
-padding: 20spx;
+padding: 0px;
 margin-bottom: 40px;
 }
 /* h1 */
@@ -24,7 +24,8 @@ margin-bottom: 40px;
 font-size: 36px;
 text-transform: uppercase;
 color: #333333;
-padding: 20px;
+padding-top: 80px;
+padding-left: 50px;
 }
 
 /* h3 div */
@@ -39,6 +40,7 @@ padding: 20px;
 font-size: 18px;
 color: #333333;
 font-weight: 600;
+padding-left: 30px;
 }
 
 /* p div */
@@ -49,12 +51,17 @@ font-weight: 600;
 /* p */
 .suggestedEvent3 {
 color: #333333;
+padding-left: 30px;
+margin-bottom: 30px;
+padding-right: 200px;
 }
 
 /* photo div */
 
 .suggestedEventMainPhoto {
-
+width: 500px;
+height: 300px;
+margin-left: -100px;
 }
 
 /* ul */
@@ -69,6 +76,7 @@ color: #333333;
 list-style-type: none;
 padding: 20px;
 padding-left: 25px;
+padding-right: 50px;
 /* border-bottom: 1px solid black; */
 }
 
@@ -90,7 +98,7 @@ padding: 20px;
     background-color: #333333;
     color: #FFFFFF;
     padding: 10px;
-    display: block;
+    display: inline-block;
 }
 
 .suggestedbutton1 {
@@ -99,10 +107,11 @@ padding: 20px;
     background-color: #333333;
     color: #FFFFFF;
     padding: 10px;
-    margin: 10px;
+     margin: 50px; 
 margin-right: 5px;
 margin-left: 0px;  
  float: right;
+ display: block;
 }
 
 .suggestedbutton2 {
@@ -110,9 +119,27 @@ margin-left: 0px;
     border: none;
   background-color: green;
     color: #FFFFFF;
-     padding: 10px;
-     margin: 10px; 
-     margin-left: 5px;  
-     margin-right: 0px;  
+     padding: 15px;
+     margin: 50px; 
+     margin-left: 0px;  
+     margin-right: 10px;  
      float: right;
+     display: block;
+}
+
+// Get Tickets
+
+.btn-buyTicket {
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 2px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 20px;
+}
+
+.slide-event {
+width: 100%;
 }

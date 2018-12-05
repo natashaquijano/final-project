@@ -5,6 +5,7 @@ import NavBar from '../NavBar/NavBar';
 import axios from '../../helper/APIConfig';
 import './Event.scss'
 
+import coverSlideEvent from '../../images/Event/bob-M.jpg'
 
 
 class EventPage extends Component {
@@ -66,6 +67,8 @@ class EventPage extends Component {
         return (
             <div>
                 <NavBar history={this.props.history} />
+                <img src={coverSlideEvent} className="slide-event " alt="Italian Trulli" />
+                <h1 className="trending">Event Page</h1>
                 <div className="suggestedEventMain">
                     <div className="suggestedEventMainh1">
                         <h1 className="suggestedEvent">Bob Moses Concert</h1>
@@ -95,7 +98,7 @@ class EventPage extends Component {
                         </div>
                         <div className="suggestedEventMainPhoto">
                             <ul className="suggestedEventul">
-                                <li className="suggestedEventli"><img src={item.image} alt="Italian Trulli" /></li>
+                                <li className="suggestedEventli"><img src={item.image} className="suggestedEventMainPhoto" alt="Italian Trulli" /></li>
                             </ul>
                         </div>
                     </div>
