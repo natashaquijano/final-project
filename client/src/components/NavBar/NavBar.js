@@ -27,7 +27,9 @@ class NavBar extends Component {
                     <ul className="nav-links">
                         {isAuthenticated() && <Fragment> <img className="nav-image" src={Defi} alt="defi" />
                             <Link to="/profile"><li className="nav-profile">Profile</li></Link></Fragment>}
-                        <Link to="/shoppingcart"> <li>Shopping Cart</li></Link>
+                        {isAuthenticated() && <Fragment>
+                            <Link to="/suggestions"><li>For You</li></Link></Fragment>}
+                        <Link to="/shoppingcart"><li>Shopping Cart</li></Link>
                         {isAuthenticated() ? <li onClick={this.handleLogOut}>Log Out</li> :
                             <Fragment>
                                 <Link to="/signin"><li>Sign In</li></Link>

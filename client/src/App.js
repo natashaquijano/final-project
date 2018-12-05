@@ -16,6 +16,7 @@ import SignUp from './pages/SignUp';
 import Footer from './components/Footer/Footer';
 import Landing from './pages/Landing';
 import Success from './pages/Success';
+import EventPage from './pages/EventPage';
 import Suggestions from './pages/Suggestions';
 
 
@@ -42,6 +43,7 @@ const App = () => (
         <Route path="/success" component={Success} />
         <AuthenticatedRoute path="/profile/:userId" component={Profile} />
         <AuthenticatedRoute path="/suggestions" component={Suggestions} />
+        <AuthenticatedRoute path="/eventpage" component={EventPage} />
         <Route path='/profile' component={Profile} />
       </Switch>
     </Router>

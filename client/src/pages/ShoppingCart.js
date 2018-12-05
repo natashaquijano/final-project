@@ -9,7 +9,7 @@ class ShoppingCart extends Component {
             <div><NavBar history={this.props.history} />
                 <div className="all-container">
                     <div className="body-container ">
-                        <ShoppingInfo />
+                        <ShoppingInfo history={this.props.history} />
                     </div>
                 </div>
             </div>

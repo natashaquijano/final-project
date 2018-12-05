@@ -1,0 +1,118 @@
+/* main div */
+.suggestedEventMain {
+
+}
+
+.wrap-around {
+    display: inline-block;
+    display: flex;
+}
+
+.wrap-around-text {
+    padding: 20px;
+    padding-right: 25px;
+    
+}
+
+/* h1 div */
+.suggestedEventMainh1 {
+padding: 20spx;
+margin-bottom: 40px;
+}
+/* h1 */
+.suggestedEvent {
+font-size: 36px;
+text-transform: uppercase;
+color: #333333;
+padding: 20px;
+}
+
+/* h3 div */
+.suggestedEventMainh3 {
+  flex-direction: row;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+/* h3 */
+.suggestedEvent2 {
+font-size: 18px;
+color: #333333;
+font-weight: 600;
+}
+
+/* p div */
+.suggestedEventMainP {
+
+}
+
+/* p */
+.suggestedEvent3 {
+color: #333333;
+}
+
+/* photo div */
+
+.suggestedEventMainPhoto {
+
+}
+
+/* ul */
+
+.suggestedEventul {
+
+}
+
+/* li */
+
+.suggestedEventli {
+list-style-type: none;
+padding: 20px;
+padding-left: 25px;
+/* border-bottom: 1px solid black; */
+}
+
+
+/* Comment Section */
+
+.commentSection {
+padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* textarea */
+.commentS {
+    width: 800px;
+    height: 100px;
+    border-radius: 2px;
+    border: none;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+    display: block;
+}
+
+.suggestedbutton1 {
+    border-radius: 2px;
+    border: none;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+margin-right: 5px;
+margin-left: 0px;  
+ float: right;
+}
+
+.suggestedbutton2 {
+     border-radius: 2px;
+    border: none;
+  background-color: green;
+    color: #FFFFFF;
+     padding: 10px;
+     margin: 10px; 
+     margin-left: 5px;  
+     margin-right: 0px;  
+     float: right;
+}

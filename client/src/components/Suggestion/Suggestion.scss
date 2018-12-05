@@ -1,0 +1,63 @@
+/* main div */
+.trendingEventsMain, .trendingArticlesMain, .trendingCreativesMain {
+justify-content: center;
+}
+
+/* h1 (title) */
+.trendingEvents, .trendingArticles, .trendingCreatives {
+font-size: 24px;
+color: #333333;
+padding-left: 40px;
+text-transform: uppercase;
+}
+
+.trendingEvents {
+   margin-top: 20px;
+}
+
+/* div for events (ul and Li) */
+.trendingevents, .trendingarticles, .trendingcreatives {
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style-type: none;
+padding: 50px;
+}
+
+
+/* ul */
+.trendingEventsul, .trendingArticlesul, .trendingCreativesul{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+}
+
+
+/* li */
+.trendingEventsli, .trendingArticlesli, .trendingCreativesli{
+justify-content: center;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+/* button div */
+.trending-buttone, .trending-buttona, .trending-buttonc {
+    text-align: center;
+        padding-bottom: 100px;
+}
+
+.trending-buttonc {
+    padding-bottom: 65px;
+}
+
+/* button */
+.trending-buttonE, .trending-buttonA, .trending-buttonC {
+color: #FFFFFF;
+background-color: #333333;
+border: none;
+border-radius: 2px;
+padding: 10px;
+font-weight: 500;
+float: right;
+margin-right: 40px;
+}
