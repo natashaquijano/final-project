@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './SuccessInfo.scss';
 
 
@@ -13,7 +14,7 @@ class SuccessInfo extends Component {
                     You can also go into your profile to view your recent purchases.
     </p>
                 <div className="go-back-success">
-                    <button className="go-back-success">Main Menu</button>
+                    <Link to="/" className="go-back-success">Main Menu</Link>
                 </div>
             </div >
 

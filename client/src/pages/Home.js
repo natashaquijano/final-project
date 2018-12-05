@@ -8,18 +8,15 @@ import axios from '../helper/APIConfig';
 class Home extends Component {
     state = {
         eventItems: [],
-        articleItems: [],
-        creativeItems: []
     }
     componentDidMount() {
         axios.get("/products")
             .then((response) => {
                 const { products } = response.data;
+                console.log(products)
 
                 this.setState({
-                    eventItems: products.filter((product) => product.productType === "Events"),
-                    articleItems: products.filter((product) => product.productType === "Articles"),
-                    creativeItems: products.filter((product) => product.productType === "Creatives")
+                    eventItems: products
                 })
 
 
@@ -29,7 +26,7 @@ class Home extends Component {
             })
     }
     render() {
-        const { eventItems, articleItems, creativeItems } = this.state
+        const { eventItems } = this.state
         if (!eventItems.length) {
             return (<div>loading.......</div>)
         }
@@ -39,9 +36,7 @@ class Home extends Component {
                     <div className="body-container">
                         <Header />
                         <Trending
-                            eventItems={eventItems}
-                            articleItems={articleItems}
-                            creativeItems={creativeItems} />
+                            eventItems={eventItems} />
                     </div>
                 </div>
             </div>

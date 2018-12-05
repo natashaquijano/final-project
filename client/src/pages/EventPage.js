@@ -9,9 +9,8 @@ class EventPage extends Component {
     }
 
     render() {
-
         return (
-            <Event />
+            <Event location={this.props.location} />
         );
     }
 }

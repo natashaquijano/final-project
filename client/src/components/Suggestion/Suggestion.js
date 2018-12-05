@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import NavBar from '../NavBar/NavBar';
 import axios from '../../helper/APIConfig';
 import './Suggestion.scss'
 
 import plant from '../../images/Events/events-plant.png'
 import mixology from '../../images/Events/events-mixology.png'
-import bobMoses from '../../images/Events/events-bobmoses.png'
+import allDay from '../../images/Events/events-allday.png';
 import yoga from '../../images/Events/events-yoga.png'
 
 import bodyPaint from '../../images/Articles/articles-bodypaint.png'
@@ -26,14 +25,15 @@ class Suggestions extends Component {
     render() {
 
         return (
-            <div>  <NavBar history={this.props.history} />
+            <div>
+                <h1 className="trending trending1">Something For You</h1>
                 <div className="trendingEventsMain">
                     <h1 className="trendingEvents">Events</h1>
                     <div className="trendingevents">
                         <ul className="trendingEventsul">
                             <li className="trendingEventsli"><img src={plant} alt="events" /></li>
                             <li className="trendingEventsli"><img src={mixology} alt="events" /></li>
-                            <li className="trendingEventsli"><Link to="/eventpage"><img src={bobMoses} alt="events" /></Link></li>
+                            <li className="trendingEventsli"><img src={allDay} alt="events" /></li>
                             <li className="trendingEventsli"><img src={yoga} alt="events" /></li>
                         </ul>
                     </div>

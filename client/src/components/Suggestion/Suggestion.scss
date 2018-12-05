@@ -3,6 +3,14 @@
 justify-content: center;
 }
 
+.trendingEventsMain {
+padding-top: 10px;
+}
+
+.trendingCreativesMain {
+    padding-bottom: 20px;
+}
+
 /* h1 (title) */
 .trendingEvents, .trendingArticles, .trendingCreatives {
 font-size: 24px;
@@ -21,7 +29,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 list-style-type: none;
-padding: 50px;
+padding: 30px;
 }
 
 
@@ -36,8 +44,8 @@ list-style-type: none;
 /* li */
 .trendingEventsli, .trendingArticlesli, .trendingCreativesli{
 justify-content: center;
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 /* button div */
@@ -60,4 +68,8 @@ padding: 10px;
 font-weight: 500;
 float: right;
 margin-right: 40px;
+}
+
+.trending1 {
+    margin-top: 0px;
 }

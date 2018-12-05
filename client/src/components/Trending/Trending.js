@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './Trending.scss';
 
 import paintNight from '../../images/Events/events-paintnight.png';
 import plantSale from '../../images/Events/events-plant-sale.png';
-import allDay from '../../images/Events/events-allday.png';
+import bobMoses from '../../images/Events/events-bobmoses.png'
 import sfMoma from '../../images/Events/events-sfmoma.png';
 
 import photography from '../../images/Articles/articles-arch-photography.png';
@@ -19,6 +20,7 @@ import peggyGou from '../../images/Creatives/creatives-peggy-gou.png';
 
 class Trending extends Component {
     render() {
+        const { eventItems } = this.props
         return (
             <div>
                 <h1 className="trending">Trending</h1>
@@ -27,10 +29,13 @@ class Trending extends Component {
                     <h1 className="trendingEvents">Events</h1>
                     <div className="trendingevents">
                         <ul className="trendingEventsul">
-                            <li className="trendingEventsli"><img src={paintNight} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={plantSale} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={allDay} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={sfMoma} alt="events" /></li>
+                            {
+                                eventItems.map((item, index) => {
+                                    return (
+                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: "/eventpage", state: { item } }}><img src={item.image} alt="events" /></Link></li>
+                                    )
+                                })
+                            }
                         </ul>
                     </div>
                     <div className="trending-buttone">
