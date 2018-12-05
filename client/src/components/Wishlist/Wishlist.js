@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './Wishlist.scss';
-import Rumors from '../../images/Wishlist/rumors-event.png';
-import PopUp from '../../images/Wishlist/popup-event.png';
-import Yoga from '../../images/Wishlist/yoga-event.png';
 import Like from '../../images/icons/like.png';
 import Comment from '../../images/icons/comment.png';
 

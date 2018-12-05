@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from '../NavBar/NavBar';
-import axios from '../../helper/APIConfig';
+// import NavBar from '../NavBar/NavBar';
+// import axios from '../../helper/APIConfig';
 import './Suggestion.scss'
 
 import plant from '../../images/Events/events-plant.png'

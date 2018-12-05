@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import './Trending.scss';
 
-import paintNight from '../../images/Events/events-paintnight.png';
-import plantSale from '../../images/Events/events-plant-sale.png';
-import bobMoses from '../../images/Events/events-bobmoses.png'
-import sfMoma from '../../images/Events/events-sfmoma.png';
+// import paintNight from '../../images/Events/events-paintnight.png';
+// import plantSale from '../../images/Events/events-plant-sale.png';
+// import bobMoses from '../../images/Events/events-bobmoses.png'
+// import sfMoma from '../../images/Events/events-sfmoma.png';
 
 import photography from '../../images/Articles/articles-arch-photography.png';
 import burningMan from '../../images/Articles/articles-burning-man.png';
