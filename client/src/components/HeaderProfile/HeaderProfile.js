@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import './HeaderProfile.scss';
 
+import defaultCover from '../../images/ProfileActivity/default-cover.png'
+
 // import Following from '../../components/Following/Following';
-import HeaderProfileInfo from '../HeaderProfileInfo/HeaderProfileInfo';
+
 
 class HeaderProfile extends Component {
     render() {
         return (
-            <div className="wrapper3">
+            <div >
                 <div>
-                    <HeaderProfileInfo />
+                    <div className="pro-img pro-img1">
+                        {/* <video className="mainprofile" loop autoPlay="main-video" src={Video} alt="video" /> */}
+                        <img src={defaultCover} className="pro-img1" alt="articles" />
+                    </div>
                 </div>
                 <div>
                     {/* <Following /> */}
