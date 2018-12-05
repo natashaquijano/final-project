@@ -10,7 +10,11 @@ class EventPage extends Component {
 
     render() {
         return (
-            <Event location={this.props.location} />
+            <div className="all-container">
+                <div className="body-container ">
+                    <Event location={this.props.location} />
+                </div>
+            </div>
         );
     }
 }
