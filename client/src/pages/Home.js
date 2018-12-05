@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from '../components/Header/Header';
-// import Carousel from '../components/Carousel/Carousel';
 import Trending from '../components/Trending/Trending';
 import NavBar from '../components/NavBar/NavBar';
 import axios from '../helper/APIConfig';

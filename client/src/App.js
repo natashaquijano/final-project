@@ -6,7 +6,7 @@ import './App.scss';
 import { isAuthenticated } from '../src/helper/Index';
 
 
-import Event from './pages/Event';
+import Event from './components/Event/Event';
 import FriendProfile from './pages/FriendProfile';
 import Home from './pages/Home';
 import Profile from './pages/Profile';

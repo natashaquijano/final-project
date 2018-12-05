@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import './Trending.scss';
 
-// import paintNight from '../../images/Events/events-paintnight.png';
-// import plantSale from '../../images/Events/events-plant-sale.png';
-// import bobMoses from '../../images/Events/events-bobmoses.png'
-// import sfMoma from '../../images/Events/events-sfmoma.png';
-
 import photography from '../../images/Articles/articles-arch-photography.png';
 import burningMan from '../../images/Articles/articles-burning-man.png';
 import sFMoma from '../../images/Articles/articles-sf-moma.png';
@@ -32,7 +27,7 @@ class Trending extends Component {
                             {
                                 eventItems.map((item, index) => {
                                     return (
-                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: "/eventpage", state: { item } }}><img src={item.image} alt="events" /></Link></li>
+                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: "/eventpage", state: { item } }}><img src={item.image} alt="events" /><h1>{item.title}</h1></Link></li>
                                     )
                                 })
                             }

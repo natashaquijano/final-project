@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Carousel from '../components/Carousel/Carousel';
 import Trending from '../components/Trending/Trending';
 import HeaderLandingVideo from '../components/HeaderLandingVideo/HeaderLandingVideo';
 import NavBar from '../components/NavBar/NavBar';
@@ -29,7 +28,7 @@ class Landing extends Component {
             })
     }
     render() {
-        const { eventItems, articleItems, creativeItems } = this.state
+        const { eventItems } = this.state
         if (!eventItems.length) {
             return (<div>loading.......</div>)
         }
@@ -38,11 +37,7 @@ class Landing extends Component {
                 <div className="all-container">
                     <div className="body-container ">
                         <HeaderLandingVideo />
-                        <Trending />
-                        <Carousel header="Events" items={eventItems} />
-                        <Carousel header="Articles" items={articleItems} />
-                        <Carousel header="Creatives" items={creativeItems} />
-
+                        <Trending eventItems={this.state.eventItems} />
                     </div>
                 </div>
             </div>
