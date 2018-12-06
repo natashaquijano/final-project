@@ -23,7 +23,7 @@ class Suggestions extends Component {
     }
 
     render() {
-
+        const { eventItems } = this.props;
         return (
             <div>
                 <h1 className="trending trending1">Something For You</h1>
@@ -31,10 +31,7 @@ class Suggestions extends Component {
                     <h1 className="trendingEvents">Events</h1>
                     <div className="trendingevents">
                         <ul className="trendingEventsul">
-                            <li className="trendingEventsli"><img src={plant} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={mixology} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={allDay} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={yoga} alt="events" /></li>
+                            {eventItems.slice(0, 4).map((item, index) => <li key={index} className="trendingEventsli"><img src={item.image} alt="events" /></li>)}
                         </ul>
                     </div>
                     <div className="trending-buttone">

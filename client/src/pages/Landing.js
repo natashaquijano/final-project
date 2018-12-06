@@ -16,9 +16,8 @@ class Landing extends Component {
                 const { products } = response.data;
 
                 this.setState({
-                    eventItems: products.filter((product) => product.productType === "Events"),
-                    articleItems: products.filter((product) => product.productType === "Articles"),
-                    creativeItems: products.filter((product) => product.productType === "Creatives")
+                    eventItems: products.slice(-4)
+
                 })
 
 

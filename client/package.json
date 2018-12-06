@@ -7,6 +7,7 @@
     "axios": "^0.18.0",
     "gulp": "^3.9.1",
     "jwt-decode": "^2.2.0",
+    "node-modules": "^1.0.1",
     "node-sass": "^4.10.0",
     "normalize-scss": "^7.0.1",
     "react": "^16.6.3",

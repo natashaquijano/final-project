@@ -15,7 +15,7 @@ class Home extends Component {
                 console.log(products)
 
                 this.setState({
-                    eventItems: products
+                    eventItems: products.slice(-4)
                 })
 
 

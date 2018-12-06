@@ -21,15 +21,31 @@ class SuggestionsPage extends Component {
                 console.log(error.message)
             })
 
+        axios.get("/products")
+            .then((response) => {
+                const { products } = response.data;
+                console.log(products)
+
+                this.setState({
+                    eventItems: products
+                })
+
+
+            })
+            .catch(() => {
+
+            })
+
+
     }
     render() {
-        const { user } = this.state
+        const { user, eventItems } = this.state
         return (
             <div><NavBar history={this.props.history} />
                 <div className="all-container">
                     <div className="body-container ">
-                        {user && <div> <HeaderProfile user={user} />
-                            <Suggestions /></div>
+                        {user && eventItems && <div> <HeaderProfile user={user} />
+                            <Suggestions eventItems={eventItems} /></div>
                         }
                     </div>
                 </div>
