@@ -7,7 +7,6 @@ import { isAuthenticated } from '../src/helper/Index';
 
 
 import Event from './components/Event/Event';
-import FriendProfile from './pages/FriendProfile';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import ShoppingCart from './pages/ShoppingCart';

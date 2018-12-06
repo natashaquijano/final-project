@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 // import axios from '../../helper/APIConfig';
 import './Suggestion.scss'
 
-import plant from '../../images/Events/events-plant.png'
-import mixology from '../../images/Events/events-mixology.png'
-import allDay from '../../images/Events/events-allday.png';
-import yoga from '../../images/Events/events-yoga.png'
+// import plant from '../../images/Events/events-plant.png'
+// import mixology from '../../images/Events/events-mixology.png'
+// import allDay from '../../images/Events/events-allday.png';
+// import yoga from '../../images/Events/events-yoga.png'
 
 import bodyPaint from '../../images/Articles/articles-bodypaint.png'
 import katerblau from '../../images/Articles/articles-katerblau.png'

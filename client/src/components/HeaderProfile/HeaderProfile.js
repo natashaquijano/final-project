@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './HeaderProfile.scss';
 
 import defaultCover from '../../images/ProfileActivity/default-cover.png'
-import Defi from '../../images/icons/default-image.png';
+// import Defi from '../../images/icons/default-image.png';
 
 // import Following from '../../components/Following/Following';
 

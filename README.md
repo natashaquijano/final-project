@@ -18,24 +18,49 @@ BACK END
 // npm init
 // touch server.js .gitignore
 // git init
-// npm install express mongoose body-parser concurrently
-// npm install nodemon
+
 // npm install bcrypt
-// npm install jsonwebtoken
+// npm install bcryptjs
+// npm install body-parser
 // npm install cors
 // npm install dotenv
+// npm install jsonwebtoken
+// npm install express
+// npm install express-handlebars
+// npm install gravatar
+// npm install mongoose
+// npm install nodemon
+// npm install node-modules
+// npm install nodemon
+// npm install passport
+// npm install passport-jwt
+// npm install react
+// npm install react-dom
+// npm stripe
+// npm install validator
 
 RUN BACK END 
 // nodemon server.js
 
 FRONT END
 // create-react-app final-project
-// npm install react-router-dom axios
-// npm install -g sass
-// npm install react-loader-spinner
+// npm install @material-iu/core
+// npm install axios
+
+// npm install gulp
+// npm install jwt-decorde
+// npm install node-modules
+// npm install node-sass
+
+// npm install normalize-css
+// npm install react
+// npm install react-dom
 // npm install react-redux
-// npm install bootstrap --save
-// npm install --save reactstrap react react-dom
+// npm install react-router-dom
+// npm install react-scripts
+// npm install react-stripe-checkout
+// npm start
+
 
 RUN FRONT END
 // npm start
@@ -47,15 +72,23 @@ Link to your entity relationship diagrams – plan out your data relationships b
 -ESTE
 
 Descriptions of any unsolved problems or future features.
-- User will recieve notifications of events they've liked, friends updates and more
-- Friends could message each other in order to make plans together
-- Users could create different boards (other than just a wishlist) in order to save 
-different categories.
+
+Further Implementation
+
+- Unlike an item
+- Remove item from wishlist
+- Create different folders other than just one wishlist
+- Edit a comment
+- Add Friends - Follow/Following options
+- Add user notifications
+- Implement search navigation
+- Update location in main menu
+- Upload/change cover and profile picture
 
 What was your motivation to build this project?
 I've had the idea of this project for a while. For years, I've used a site called Resident Advisor to look up events. Even though it is pretty helpful, I also found myself having issues with it such as:
-1. It is not very user friendly. 
-2. It is hard to navigate around it (no search bar)
+1. It is not very user friendly 
+2. It is hard to navigate ex: no search bar
 3. It is very complicated to update your location
 4. It is dificult to find your upcoming events and purchases
 5. It only ends up focusing on creative parties and night time events

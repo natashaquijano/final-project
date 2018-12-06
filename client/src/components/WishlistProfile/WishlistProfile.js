@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './WishlistProfile.scss'
 
-// likes
-import deckYoga from '../../images/ProfileActivity/deck-yoga.png';
-import bowl from '../../images/ProfileActivity/bowl.png';
-import recordSale from '../../images/ProfileActivity/record-sale.png';
-import mixologyShots from '../../images/ProfileActivity/mixology-shots.png'
+// // likes
+// import deckYoga from '../../images/ProfileActivity/deck-yoga.png';
+// import bowl from '../../images/ProfileActivity/bowl.png';
+// import recordSale from '../../images/ProfileActivity/record-sale.png';
+// import mixologyShots from '../../images/ProfileActivity/mixology-shots.png'
 
-// wishlist
+// // wishlist
 
-import abracadabra from '../../images/ProfileActivity/abracadabra.png'
-import bioFarming from '../../images/ProfileActivity/biodynamic-farmimg.png'
-import wineTasting from '../../images/ProfileActivity/winetasting.png'
-import sfmomA from '../../images/ProfileActivity/sf-momA.png'
+// import abracadabra from '../../images/ProfileActivity/abracadabra.png'
+// import bioFarming from '../../images/ProfileActivity/biodynamic-farmimg.png'
+// import wineTasting from '../../images/ProfileActivity/winetasting.png'
+// import sfmomA from '../../images/ProfileActivity/sf-momA.png'
 
 // upcoming events
 import rumors from '../../images/ProfileActivity/rumors-artbasel.png'

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import jwtDecode from 'jwt-decode'
 import { isAuthenticated } from '../../helper/Index'
-import NavBar from '../NavBar/NavBar';
 import axios from '../../helper/APIConfig';
 import './Event.scss'
 
