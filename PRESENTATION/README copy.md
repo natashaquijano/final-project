@@ -9,6 +9,61 @@ A list of the technologies used.
 -MERN Stack (MongoDB, Express, React and Node.js)
 -SASS
 
+A list of installation steps for the app itself and any dependencies - how would another developer run your site locally?
+
+RUN MONGOD
+// mongod
+
+BACK END
+// npm init
+// touch server.js .gitignore
+// git init
+
+// npm install bcrypt
+// npm install bcryptjs
+// npm install body-parser
+// npm install cors
+// npm install dotenv
+// npm install jsonwebtoken
+// npm install express
+// npm install express-handlebars
+// npm install gravatar
+// npm install mongoose
+// npm install nodemon
+// npm install node-modules
+// npm install nodemon
+// npm install passport
+// npm install passport-jwt
+// npm install react
+// npm install react-dom
+// npm stripe
+// npm install validator
+
+RUN BACK END 
+// nodemon server.js
+
+FRONT END
+// create-react-app final-project
+// npm install @material-iu/core
+// npm install axios
+
+// npm install gulp
+// npm install jwt-decorde
+// npm install node-modules
+// npm install node-sass
+
+// npm install normalize-css
+// npm install react
+// npm install react-dom
+// npm install react-redux
+// npm install react-router-dom
+// npm install react-scripts
+// npm install react-stripe-checkout
+// npm start
+
+
+RUN FRONT END
+// npm start
 
 Link to your user stories - who are your users, what do they want, and why?
 Link to your wireframes – sketches of major views / interfaces in your application.
@@ -30,7 +85,6 @@ Further Implementation
 - Implement search navigation
 - Update location in main menu
 - Upload/change cover and profile picture
-
 
 What was your motivation to build this project?
 I've had the idea of this project for a while. For years, I've used a site called Resident Advisor to look up events. Even though it is pretty helpful, I also found myself having issues with it such as:
