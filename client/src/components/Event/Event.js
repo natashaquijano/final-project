@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import jwtDecode from 'jwt-decode'
+import { isAuthenticated } from '../../helper/Index'
 import NavBar from '../NavBar/NavBar';
 import axios from '../../helper/APIConfig';
 import './Event.scss'
@@ -16,12 +17,18 @@ class EventPage extends Component {
     }
     componentDidMount() {
         const { item } = this.props.location.state;
-        const user = jwtDecode(window.localStorage.getItem("token").slice(7))
+        const token = window.localStorage.getItem("token")
+        let user
+        if (token) {
+            user = jwtDecode(token.slice(7))
+        }
         this.setState({
             item,
             user
 
         })
+
+
     }
     deleteComment(commentId, itemId) {
         axios.delete(`/products/${itemId}/comments/${commentId}`, {
@@ -66,7 +73,6 @@ class EventPage extends Component {
         const { item, user } = this.state
         return (
             <div>
-                <NavBar history={this.props.history} />
                 <img src={coverSlideEvent} className="slide-event " alt="Italian Trulli" />
                 <h1 className="trending">Event Page</h1>
                 <div className="suggestedEventMain">
@@ -105,18 +111,19 @@ class EventPage extends Component {
                     <div className="buySection">
                         <Link to="/shoppingcart" className="btn-buyTicket">Get Tickets</Link>
                     </div>
-                    <div className="commentSection">
+                    {isAuthenticated() &&
+                        <div className="commentSection">
 
-                        <textarea value={this.state.comment || ""} name="comment" onChange={this.handleChange} className="commentS" placeholder="Leave a comment"></textarea>
-                        <button onClick={() => this.submitComment(item._id)} className="suggestedbutton2">Post</button>
-                        <button onClick={this.clearComment} className="suggestedbutton1">Cancel</button>
-                    </div>
+                            <textarea value={this.state.comment || ""} name="comment" onChange={this.handleChange} className="commentS" placeholder="Leave a comment"></textarea>
+                            <button onClick={() => this.submitComment(item._id)} className="suggestedbutton2">Post</button>
+                            <button onClick={this.clearComment} className="suggestedbutton1">Cancel</button>
+                        </div>}
                     {
                         item.comments && item.comments.map((comment, index) => {
                             return (<div key={index}>
                                 <h3>{comment.user.firstName} {comment.user.lastName}</h3>
                                 <p>{comment.comment}</p>
-                                {user.id === comment.user._id && <button onClick={() => this.deleteComment(comment._id, item._id)}>delete</button>}
+                                {user && user.id === comment.user._id && <button onClick={() => this.deleteComment(comment._id, item._id)}>delete</button>}
                             </div>)
                         })
                     }

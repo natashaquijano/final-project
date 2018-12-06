@@ -31,7 +31,7 @@ class Suggestions extends Component {
     }
 
     render() {
-
+        const { user } = this.props
         return (
             <div>
                 <h1 className="trending trending1">Your Activity</h1>
@@ -39,10 +39,11 @@ class Suggestions extends Component {
                     <h1 className="trendingEvents">Likes</h1>
                     <div className="trendingevents">
                         <ul className="trendingEventsul">
-                            <li className="trendingEventsli"><img src={deckYoga} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={bowl} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={recordSale} alt="events" /></li>
-                            <li className="trendingEventsli"><img src={mixologyShots} alt="events" /></li>
+                            {user.likes && user.likes.slice(1).slice(-4).map((product, index) => {
+                                return (
+                                    <li key={index} className="trendingEventsli"><img src={product.image} alt="events" /></li>
+                                )
+                            })}
                         </ul>
                     </div>
                     <div className="trending-buttone">
@@ -53,10 +54,11 @@ class Suggestions extends Component {
                     <h1 className="trendingArticles">Wishlist</h1>
                     <div className="trendingarticles">
                         <ul className="trendingArticlesul">
-                            <li className="trendingArticlesli"><img src={abracadabra} alt="articles" /></li>
-                            <li className="trendingArticlesli"><img src={bioFarming} alt="articles" /></li>
-                            <li className="trendingArticlesli"><img src={wineTasting} alt="articles" /></li>
-                            <li className="trendingArticlesli"><img src={sfmomA} alt="articles" /></li>
+                            {user.wishlist && user.wishlist.slice(1).slice(-4).map((product, index) => {
+                                return (
+                                    <li key={index} className="trendingEventsli"><img src={product.image} alt="events" /></li>
+                                )
+                            })}
                         </ul>
                     </div>
                     <div className="trending-buttona">

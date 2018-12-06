@@ -37,13 +37,13 @@ const App = () => (
         <Route path="/landing" component={Landing} />
         <Route path="/signin" component={SignIn} />
         <Route path="/event" component={Event} />
-        <Route path="/friendprofile" component={FriendProfile} />
+        {/* <Route path="/friendprofile" component={FriendProfile} /> */}
         <Route path="/signup" component={SignUp} />
         <Route path="/shoppingcart" component={ShoppingCart} />
         <Route path="/success" component={Success} />
         <AuthenticatedRoute path="/profile/:userId" component={Profile} />
         <AuthenticatedRoute path="/suggestions" component={Suggestions} />
-        <AuthenticatedRoute path="/eventpage" component={EventPage} />
+        <Route path="/eventpage" component={EventPage} />
         <Route path='/profile' component={Profile} />
       </Switch>
     </Router>

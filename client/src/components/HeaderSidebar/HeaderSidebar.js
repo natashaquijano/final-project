@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import './HeaderSidebar.scss';
 
 
-import Following from '../../components/Following/Following';
+import Likes from '../../components/Likes/Likes';
 import Wishlist from '../../components/Wishlist/Wishlist';
 import axios from '../../helper/APIConfig';
 
 class HeaderSidebar extends Component {
     state = {
-        following: [],
+        likes: [],
         wishlist: []
     }
 
@@ -17,8 +17,8 @@ class HeaderSidebar extends Component {
             .then((response) => {
                 console.log(response.data)
                 this.setState({
-                    following: response.data.user.following,
-                    wishlist: response.data.user.whishlist,
+                    likes: response.data.user.likes,
+                    wishlist: response.data.user.wishlist,
                 })
             })
             .catch((error) => {
@@ -27,9 +27,10 @@ class HeaderSidebar extends Component {
 
     }
     render() {
+        console.log(this.state.likes, this.state.wishlist)
         return (
             <div className="header-sidebar">
-                <Following following={this.state.following} />
+                <Likes likes={this.state.likes} />
                 <Wishlist wishlist={this.state.wishlist} />
             </div>
         );

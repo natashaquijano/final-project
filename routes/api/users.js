@@ -107,7 +107,8 @@ router.post('/login', (req, res) => {
 router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
     User.findById(req.user.id)
         .populate('following')
-        .populate('whishlist')
+        .populate('wishlist')
+        .populate('likes')
         .exec(function (err, user) {
             if (err) return res.status(400).json({ error: err.message })
             return res.send({

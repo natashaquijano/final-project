@@ -138,11 +138,35 @@ router.post('/event/:id', passport.authenticate('jwt', { session: false }), (req
         }).catch((error) => {
             return res.status(400).json({ error: error.message })
         });
+    } else if (req.body.add) {
+        User.findOneAndUpdate(
+            { _id: userId },
+            {
+                $push: { wishlist: eventId }
+            })
+            .then(() => {
+
+                User.findById(userId)
+                    .populate('following')
+                    .populate('wishlist')
+                    .populate('likes')
+                    .exec(function (err, user) {
+                        if (err) return res.status(400).json({ error: err.message })
+                        return res.send({
+                            user
+                        })
+                    });
+
+            })
+            .catch((error) => {
+                return res.status(400).json({ error: error.message })
+            });
+
     } else {
         User.findOneAndUpdate(
             { _id: userId },
             {
-                $push: { whishlist: eventId }
+                $push: { likes: eventId }
             })
             .then(() => {
                 Product.findOneAndUpdate(
@@ -151,9 +175,18 @@ router.post('/event/:id', passport.authenticate('jwt', { session: false }), (req
                         $push: { likes: userId }
                     })
                     .then(() => {
-                        return res.json({
-                            success: true
-                        })
+
+                        User.findById(userId)
+                            .populate('following')
+                            .populate('wishlist')
+                            .populate('likes')
+                            .exec(function (err, user) {
+                                if (err) return res.status(400).json({ error: err.message })
+                                return res.send({
+                                    user
+                                })
+                            });
+
                     })
             })
             .catch((error) => {

@@ -12,8 +12,38 @@ import bedouin from '../../images/Creatives/creatives-bedouin.png';
 import mitchGobel from '../../images/Creatives/creatives-mitch-gobel.png';
 import peggyGou from '../../images/Creatives/creatives-peggy-gou.png';
 
+import axios from '../../helper/APIConfig';
+
 
 class Trending extends Component {
+    add = (eventId) => {
+        axios.post(`/products/event/${eventId}`, { add: true }, {
+            headers: {
+                Authorization: window.localStorage.getItem("token")
+            }
+        })
+            .then((response) => {
+                window.location.reload()
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
+
+    like = (eventId) => {
+        axios.post(`/products/event/${eventId}`, { like: true }, {
+            headers: {
+                Authorization: window.localStorage.getItem("token")
+            }
+        })
+            .then((response) => {
+                window.location.reload()
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
+
     render() {
         const { eventItems } = this.props
         return (
@@ -27,7 +57,13 @@ class Trending extends Component {
                             {
                                 eventItems.map((item, index) => {
                                     return (
-                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: "/eventpage", state: { item } }}><img src={item.image} alt="events" /><h1>{item.title}</h1></Link></li>
+                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: "/eventpage", state: { item } }}>
+                                            <img src={item.image} alt="events" />
+                                            <h1>{item.title}</h1>
+                                        </Link>
+                                            <p onClick={() => this.add(item._id)}>add</p>
+                                            <p onClick={() => this.like(item._id)}>like</p>
+                                        </li>
                                     )
                                 })
                             }

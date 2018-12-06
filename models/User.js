@@ -29,7 +29,8 @@ const UserSchema = new Schema({
     },
     followers: [{ type: String, ref: 'users' }],
     following: [{ type: String, ref: 'users' }],
-    whishlist: [{ type: String, ref: 'products' }],
+    wishlist: [{ type: String, ref: 'products' }],
+    likes: [{ type: String, ref: 'products' }],
     Date: {
         type: Date,
         default: Date.now,

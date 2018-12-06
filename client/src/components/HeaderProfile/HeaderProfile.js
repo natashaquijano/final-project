@@ -9,6 +9,7 @@ import Defi from '../../images/icons/default-image.png';
 
 class HeaderProfile extends Component {
     render() {
+        const { user } = this.props
         return (
             <div >
                 <div>
@@ -17,10 +18,10 @@ class HeaderProfile extends Component {
                         <img src={defaultCover} className="pro-img1" alt="articles" />
                     </div>
                     <div>
-                        <h1 className="default-user-info">Username</h1>
-                        <h2 className="default-user-info info2">Full Name</h2>
+                        <h1 className="default-user-info">{user.username}</h1>
+                        <h2 className="default-user-info info2">{`${user.firstName} ${user.lastName}`}</h2>
                         <h2 className="default-user-info info3">Location</h2>
-                        <img className="nav-image nav-image2" src={Defi} alt="defi" />
+                        <img className="nav-image nav-image2" src={user.avatar} alt="defi" />
                     </div>
                 </div>
                 <div>
