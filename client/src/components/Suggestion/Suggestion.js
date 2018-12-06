@@ -32,6 +32,7 @@ class Suggestions extends Component {
                     <div className="trendingevents">
                         <ul className="trendingEventsul">
                             {eventItems.slice(0, 4).map((item, index) => <li key={index} className="trendingEventsli"><img src={item.image} alt="events" /></li>)}
+
                         </ul>
                     </div>
                     <div className="trending-buttone">

@@ -42,7 +42,7 @@ const App = () => (
         <Route path="/success" component={Success} />
         <AuthenticatedRoute path="/profile/:userId" component={Profile} />
         <AuthenticatedRoute path="/suggestions" component={Suggestions} />
-        <Route path="/eventpage" component={EventPage} />
+        <Route path="/eventpage/:id" component={EventPage} />
         <Route path='/profile' component={Profile} />
       </Switch>
     </Router>

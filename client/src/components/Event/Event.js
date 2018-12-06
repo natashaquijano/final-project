@@ -8,7 +8,7 @@ import './Event.scss'
 import coverSlideEvent from '../../images/Event/bob-M.jpg'
 
 
-class EventPage extends Component {
+class Event extends Component {
     state = {
         item: {
 
@@ -18,17 +18,34 @@ class EventPage extends Component {
         const { item } = this.props.location.state;
         const token = window.localStorage.getItem("token")
         let user
+        console.log('props', this.props)
+        const id = this.props.location.pathname.split('/')[2]
+        console.log('id', id)
         if (token) {
             user = jwtDecode(token.slice(7))
         }
+        console.log('item', item)
         this.setState({
-            item,
+            //item,
             user
 
         })
-
-
+        this.fetchComments(id)
     }
+
+    fetchComments(id) {
+        axios.get(`/products/${id}`)
+            .then(response => {
+                console.log('we got a response!', response)
+                this.setState({
+                    item: response.data
+                })
+            })
+            .catch(err => {
+                console.error(err)
+            })
+    }
+
     deleteComment(commentId, itemId) {
         axios.delete(`/products/${itemId}/comments/${commentId}`, {
             headers: {
@@ -36,10 +53,15 @@ class EventPage extends Component {
             }
         })
             .then((response) => {
+                console.log('response after deleting', response.data)
                 const { event } = response.data
+                event.comment = event.comments.reverse()
                 this.setState({
                     item: event
                 })
+            })
+            .catch(err => {
+                console.error(err)
             })
     }
     handleChange = (e) => {
@@ -53,17 +75,23 @@ class EventPage extends Component {
         })
     }
     submitComment = (id) => {
+        console.log('submitting a comment', id)
         axios.post(`/products/event/${id}`, { comment: this.state.comment }, {
             headers: {
                 Authorization: window.localStorage.getItem("token")
             }
         })
             .then((response) => {
+                console.log('got a response after submitting', response)
                 const { event } = response.data
+                event.comment = event.comments.reverse()
                 this.setState({
                     item: event
                 })
 
+            })
+            .catch(err => {
+                console.error(err)
             })
     }
 
@@ -119,10 +147,12 @@ class EventPage extends Component {
                         </div>}
                     {
                         item.comments && item.comments.map((comment, index) => {
-                            return (<div key={index}>
-                                <h3>{comment.user.firstName} {comment.user.lastName}</h3>
+                            //console.log('should display a delete button', user && comment.user && user.id === comment.user._id)
+                            return (<div key={comment._id}>
+                                <h3>{comment.user && comment.user.firstName} {comment.user && comment.user.lastName}</h3>
                                 <p>{comment.comment}</p>
-                                {user && user.id === comment.user._id && <button onClick={() => this.deleteComment(comment._id, item._id)}>delete</button>}
+
+                                {user && comment.user && user.id === comment.user._id && <button onClick={() => this.deleteComment(comment._id, item._id)}>delete</button>}
                             </div>)
                         })
                     }
@@ -133,4 +163,4 @@ class EventPage extends Component {
     }
 }
 
-export default EventPage;
+export default Event;

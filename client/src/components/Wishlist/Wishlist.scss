@@ -4,30 +4,42 @@
     background-color: white;
 }
 
-.title-wishlist {
-    display: inline-block;
+.title-follow-view {
+
 }
 
-.title-view3 {
-    display: inline-block;
+// wishlist title
+.title-follow {
+display: block;
+font-size: 50px;
 }
 
-.title-wishlist-view {
-    border-bottom: 1px solid #EFEFEF;
-};
-
-.likes {
-    width: .18in;
-}
-
-.button-follow1, .button-follow2, .button-follow3 {
-padding-bottom: 5px;
-}
-
+// p div (view all)
 .title-view {
-    padding-left: 100px;
+display: inline-block;
 }
 
-.title-view-2 {
-    padding-left: 113px;
+// view all div
+.title-view-2{
+
+}
+
+// view all tag
+.title-view3 {
+
+}
+
+// list of objects (backend)
+.follow-list {
+
+}
+
+// title of event (backend)
+.follow-name {
+
+}
+
+// title of event
+.one {
+
 }

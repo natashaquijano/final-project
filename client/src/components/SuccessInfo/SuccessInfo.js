@@ -19,7 +19,7 @@ class SuccessInfo extends Component {
                 <p className="lead lead1">You can also go into your profile to view your recent purchases.</p>
 
                 <div className="go-back-success">
-                    <Link to="/" className="go-back-success">Main Menu</Link>
+                    <Link to="/" className="go-back-success-2">Main Menu</Link>
 
                 </div >
 

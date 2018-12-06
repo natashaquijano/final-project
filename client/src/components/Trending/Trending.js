@@ -13,6 +13,8 @@ import mitchGobel from '../../images/Creatives/creatives-mitch-gobel.png';
 import peggyGou from '../../images/Creatives/creatives-peggy-gou.png';
 
 import axios from '../../helper/APIConfig';
+import Like from '../../images/icons/like.png';
+import Add from '../../images/icons/add-01.png';
 
 
 class Trending extends Component {
@@ -56,13 +58,14 @@ class Trending extends Component {
                         <ul className="trendingEventsul">
                             {
                                 eventItems.map((item, index) => {
+                                    console.log('ITEM', item)
                                     return (
-                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: "/eventpage", state: { item } }}>
+                                        <li key={index} className="trendingEventsli"><Link to={{ pathname: `/eventpage/${item._id}`, state: { item } }}>
                                             <img src={item.image} alt="events" />
                                             <h1>{item.title}</h1>
                                         </Link>
-                                            <p onClick={() => this.add(item._id)}>add</p>
-                                            <p onClick={() => this.like(item._id)}>like</p>
+                                            <img onClick={() => this.add(item._id)} className="followers followers-i likes" src={Add} alt="add" />
+                                            <img onClick={() => this.like(item._id)} className="followers followers-i likes" src={Like} alt="like" />
                                         </li>
                                     )
                                 })

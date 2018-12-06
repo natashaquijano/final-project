@@ -29,6 +29,17 @@ router.post('/add', (req, res) => {
 
 });
 
+router.get('/:id', (req, res) => {
+    Product.findOne({ _id: req.params.id })
+        .populate('comments.user')
+        .then(response => {
+            res.send(response)
+        })
+        .catch(err => {
+            res.status(404).send(err)
+        })
+})
+
 // Add products to the products table
 router.get('/', (req, res) => {
     Product.find({ productType: "Events" })
@@ -54,7 +65,7 @@ router.delete("/:eventId/comments/:commentId", passport.authenticate('jwt', { se
     (req, res) => {
         const commentId = req.params.commentId;
         const eventId = req.params.eventId
-        console.log
+
         Comment.deleteOne({
             _id: commentId
         }).then(() => {
