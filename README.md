@@ -14,7 +14,6 @@ Link to your user stories - who are your users, what do they want, and why?
 Link to your wireframes – sketches of major views / interfaces in your application.
 
 Link to your entity relationship diagrams – plan out your data relationships before coding.
--ESTE
 
 Descriptions of any unsolved problems or future features.
 
