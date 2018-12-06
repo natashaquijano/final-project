@@ -9,7 +9,7 @@ class Wishlist extends Component {
         return (
             <div className="Wishlist">
                 <div className="title-follow-view">
-                    <div className="title-follow">
+                    <div className="title-follow1">
                         <p className="title-follow">Wishlist</p>
                     </div>
                     <div className="title-view title-view-2">

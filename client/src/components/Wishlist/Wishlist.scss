@@ -5,13 +5,16 @@
 }
 
 .title-follow-view {
-
+    border-bottom: 1px solid black;
 }
 
 // wishlist title
 .title-follow {
-display: block;
+display: inline-block;
 font-size: 50px;
+}
+.title-follow1 {
+    display: inline-block;
 }
 
 // p div (view all)
@@ -21,12 +24,12 @@ display: inline-block;
 
 // view all div
 .title-view-2{
-
+    display: inline-block;
 }
 
 // view all tag
 .title-view3 {
-
+display: inline-block;
 }
 
 // list of objects (backend)

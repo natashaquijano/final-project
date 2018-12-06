@@ -26,11 +26,18 @@ padding-bottom: 5px;
 
 .title-view {
     padding-left: 100px;
+    display: inline-block;
 }
 
 .title-view-2 {
     padding-left: 113px;
+    display: inline-block;
 }
 
-.followers-p {
+.title-follow-view {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.title-follow {
+    display: inline-block;
 }
