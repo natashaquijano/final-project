@@ -62,7 +62,7 @@ class Trending extends Component {
                                     return (
                                         <li key={index} className="trendingEventsli"><Link to={{ pathname: `/eventpage/${item._id}`, state: { item } }}>
                                             <img src={item.image} alt="events" />
-                                            <h1>{item.title}</h1>
+                                            <h1 className="events-title">{item.title}</h1>
                                         </Link>
                                             <img onClick={() => this.add(item._id)} className="followers followers-i likes" src={Add} alt="add" />
                                             <img onClick={() => this.like(item._id)} className="followers followers-i likes" src={Like} alt="like" />
