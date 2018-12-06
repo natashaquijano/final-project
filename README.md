@@ -90,7 +90,7 @@ I've had the idea of this project for a while. For years, I've used a site calle
 1. It is not very user friendly 
 2. It is hard to navigate ex: no search bar
 3. It is very complicated to update your location
-4. It is dificult to find your upcoming events and purchases
+4. It is difficult to find your upcoming events and purchases
 5. It only ends up focusing on creative parties and night time events
 
 Demo of your project's core functionality.
