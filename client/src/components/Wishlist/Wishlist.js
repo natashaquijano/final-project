@@ -10,7 +10,7 @@ class Wishlist extends Component {
             <div className="Wishlist">
                 <div className="title-follow-view">
                     <div className="title-follow">
-                        <p className="title-follow">Whislist</p>
+                        <p className="title-follow">Wishlist</p>
                     </div>
                     <div className="title-view title-view-2">
                         <p className="title-view3">View All</p>
