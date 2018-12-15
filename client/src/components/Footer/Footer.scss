@@ -7,19 +7,21 @@
    background-color: #333333;
    color: #FFFFFF;
    position: relative;
-//    padding-right: 180px;
+   padding-right: 180px;
    padding-left: 180px;
+   padding-bottom: 10px;
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
 }
 
 .logo-footer {
     width: .4in;
     height: .4in;
     margin-top: 15px;
-    margin-bottom: 10px;
-   
-    margin-left: 10px;
+    margin-bottom: -10px;
+    margin-left: 10px;  
+    margin-right: 20px;
 }
 
 .social-icons-footer {
@@ -33,14 +35,11 @@
 
 .footer-title,  {
     display: inline-block;
-    // text-transform: uppercase;
-    margin-left: 20px;
-    padding-top: 20px;
+    // margin-left: 20px;
+    // margin-top: 20px;
     font-size: 24px;
 }
-.logo-footer {
-display: inline-block;
-}
+
 
 .div1 {
     display: inline-block;
@@ -48,9 +47,10 @@ display: inline-block;
 
 .div2 {
     float: right;
+    justify-content: space-between;
 }
 
 .social-ul {
     float: right;
-    margin-left: 860px;
 }
+
