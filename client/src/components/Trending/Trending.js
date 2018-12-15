@@ -64,7 +64,7 @@ class Trending extends Component {
                                             <img src={item.image} alt="events" />
                                             <h1 className="events-title">{item.title}</h1>
                                         </Link>
-                                            <img onClick={() => this.add(item._id)} className="followers followers-i likes" src={Add} alt="add" />
+                                            <img onClick={() => this.add(item._id)} className="followers followers-i likes add" src={Add} alt="add" />
                                             <img onClick={() => this.like(item._id)} className="followers followers-i likes" src={Like} alt="like" />
                                         </li>
                                     )
