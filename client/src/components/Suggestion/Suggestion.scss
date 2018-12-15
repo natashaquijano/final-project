@@ -1,26 +1,9 @@
-/* main div */
-.trendingEventsMain, .trendingArticlesMain, .trendingCreativesMain {
-justify-content: center;
-}
-
 .trendingEventsMain {
 padding-top: 10px;
 }
 
 .trendingCreativesMain {
     padding-bottom: 20px;
-}
-
-/* h1 (title) */
-.trendingEvents, .trendingArticles, .trendingCreatives {
-font-size: 24px;
-color: #333333;
-padding-left: 40px;
-// text-transform: uppercase;
-}
-
-.trendingEvents {
-   margin-top: 20px;
 }
 
 /* div for events (ul and Li) */
