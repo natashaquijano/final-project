@@ -8,14 +8,11 @@ class Wishlist extends Component {
         const { wishlist } = this.props
         return (
             <div className="Wishlist">
-                <div className="title-follow-view">
-                    <div className="title-follow1">
-                        <p className="title-follow">Wishlist</p>
-                    </div>
-                    <div className="title-view title-view-2">
-                        <p className="title-view3">View All</p>
-                    </div>
-                </div>
+                <ul className="title-follow-view">
+                    <li className="title-follow">Wishlist</li>
+                    <li className="title-view3">View All</li>
+
+                </ul>
                 <div className="follow-list">
                     {
                         wishlist && wishlist.slice(1).slice(-3).map((wish, index) => {

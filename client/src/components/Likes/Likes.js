@@ -7,15 +7,11 @@ class Likes extends Component {
     render() {
         const { likes } = this.props
         return (
-            <div className="Wishlist">
-                <div className="title-follow-view">
-                    <div className="title-follow">
-                        <p className="title-follow">Likes</p>
-                    </div>
-                    <div className="title-view title-view-2">
-                        <p>View All</p>
-                    </div>
-                </div>
+            <div className="Likes">
+                <ul className="title-follow-view">
+                    <li className="title-follow">Likes</li>
+                    <li className="title-view3">View All</li>
+                </ul>
                 <div className="follow-list">
                     {
                         likes.slice(1).slice(-3).map((like, index) => {
