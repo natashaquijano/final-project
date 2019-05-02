@@ -3,8 +3,6 @@
     border-bottom: 1px solid #EFEFEF;
     background-color: #FFFFFF;
     display: flex;
-    // height: 100%;
-    // flex-direction: row;
     justify-content: center;
     position: fixed;
     z-index: 10;
@@ -13,7 +11,6 @@
     margin-top: 0px;
      
      @media only screen and (max-width: 786px) {
-         flex-direction: column;
          flex-wrap: wrap;
      };
 };
@@ -96,78 +93,52 @@ li {
     width: .2in;
 };
 
-// /* Media Queries */
 
-// @media only screen and (max-width: 1470px) {
-//     input[type=text] {
-//         width: 500px;
-//     }
-// }
+/* Media Queries */
 
-// @media only screen and (max-width: 1220px) {
-//     input[type=text] {
-//         width: 400px;
-//     }
+@media only screen and (max-width: 1470px) {
+#search-bar {
+    padding: 5px;
+    padding-left: 40px;
+    width: 700px;
+};
+}
 
-//     .nav-links {
-//         padding-right: 10px;
-//     }
-// }
+@media only screen and (max-width: 1350px) {
+    #search-bar {    
+    width: 600px;
+};
+}
 
-// @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1250px) {
+#search-bar {
+    width: 500px;
+};
+}
 
-//     /* Nav Bar */
+@media only screen and (max-width: 1160px) {
+#search-bar {
+    width: 400px;
+};
+}
 
-//     input[type=text] {
-//         width: 300px;
-//     }
+@media only screen and (max-width: 1070px) {
+#search-bar {
+    width: 300px;
+};
 
-//     .nav-links {
-//         padding-right: 5px;
-//     }
-// }
+}
 
-// @media only screen and (max-width: 924px) {
+@media only screen and (max-width: 950px) {
+#search-bar {
+    width: 200px;
+};
 
-//     /* Nav Bar */
+}
 
-//     input[type=text] {
-//         width: 200px;
-//         margin-left: 0px;
-//     }
+@media only screen and (max-width: 600px) {
+#search-bar {
+    display: none;
+};
 
-//     .nav-links {
-//         padding-right: 0px;
-//         margin-left: 0px;
-//         margin-right: 0px;
-//     }
-// }
-// }
-
-// @media only screen and (max-width: 786px) {
-//     .nav-links {
-//         padding-right: 0px;
-//         margin-left: 0px;
-//         margin-right: 0px;
-//     }
-// }
-
-// @media only screen and (max-width: 775px) {
-
-//     /* Nav Bar */
-
-//     .nav-bar {
-//         justify-content: space-between;
-//     }
-
-//     .hamburger {
-//         display: block;
-//     }
-
-    // form {
-    //     display: none;
-    // }
-
-    // .nav-links {
-    //     display: none;
-    // }
+}
