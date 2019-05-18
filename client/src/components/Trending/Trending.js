@@ -58,7 +58,6 @@ class Trending extends Component {
                         <ul className="trendingEventsul">
                             {
                                 eventItems.map((item, index) => {
-                                    console.log('ITEM', item)
                                     return (
                                         <li key={index} className="trendingEventsli"><Link to={{ pathname: `/eventpage/${item._id}`, state: { item } }}>
                                             <img src={item.image} alt="events" />
