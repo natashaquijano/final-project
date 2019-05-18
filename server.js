@@ -18,7 +18,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // DB Config
-const db = require('./config/key').mongoURI;
+let db
+if (process.env.MONGODB_URI) {
+    db = process.env.MONGODB_URI
+} else {
+    db = require('./config/key').mongoURI;
+}
 
 // Connect To MongoDB Using Mlab
 mongoose
@@ -28,7 +33,8 @@ mongoose
 
 // Set Static File or Test Route . Welcome Route for the Index
 app.get('/', (req, res) => {
-    res.send('Hello Back-End World!');
+    //res.send('Hello Back-End World!');
+    res.render('client/index')
 });
 
 // app.get('/', (req, res) => {

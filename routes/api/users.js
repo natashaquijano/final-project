@@ -4,7 +4,15 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
-const keys = require('../../config/key')
+let keys
+if (process.env.secretOrKey) {
+    keys = process.env.secretOrKey;
+} else {
+    keys = require('../../config/key')
+}
+
+
+
 
 // Load User Model
 const User = require('../../models/User');

@@ -6,7 +6,11 @@ const keys = require('./key');
 
 const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-opts.secretOrKey = keys.secretOrKey;
+if (process.env.secretOrKey) {
+    opts.secretOrKey = process.env.secretOrKey;
+} else {
+    opts.secretOrKey = keys.secretOrKey
+}
 
 module.exports = passport => {
     passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
