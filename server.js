@@ -33,8 +33,8 @@ mongoose
 
 // Set Static File or Test Route . Welcome Route for the Index
 app.get('/', (req, res) => {
-    //res.send('Hello Back-End World!');
-    res.render('client/index')
+    res.send('Hello Back-End World!');
+    // res.render('client/index')
 });
 
 // app.get('/', (req, res) => {
