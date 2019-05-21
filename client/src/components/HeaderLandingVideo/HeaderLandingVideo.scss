@@ -30,5 +30,31 @@
       left: 250px;
 }
 
+@media only screen and (max-width: 1100px) { 
+.button-save {
+    left: 180px;
+}
+
+#location-bar2 {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 700px) { 
+
+    .button-save {
+        left: 100px;
+    }
+
+#location-bar2 {
+width: 200px;
+}
+.save-button2 {
+   height: 40px;
+    width: 60px;
+}
+}
+
+
 
 
